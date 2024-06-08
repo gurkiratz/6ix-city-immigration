@@ -1,11 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
-import React, { useState } from 'react'
 import Link from 'next/link'
-import { IoPlayCircleOutline } from 'react-icons/io5'
-import Image from 'next/image'
-import ModalVideo from 'react-modal-video'
-import { HiArrowDown } from 'react-icons/hi'
-import TabOne from '@components/tabs/TabOne'
 
 const HeroSectionOne = () => {
   return (
@@ -25,16 +18,18 @@ const HeroSectionOne = () => {
                 Journey
               </h1>
               <p className="lead">
-                Streamlining your journey to a a new home in Canada. We
-                specialize in Express Entry, LMIA, PGWP, Permanent Residence,
-                Work/Study Permit, and more.
+                Streamlining your journey to a new home in Canada. We specialize
+                in Express Entry, LMIA, PGWP, Permanent Residence, Work/Study
+                Permit, and more.
               </p>
               <div className="action-btns mt-5 align-items-center flex d-sm-flex d-lg-flex d-md-flex">
                 <Link href="/request-demo">
                   <a className="btn btn-primary me-3">Request a Free Call</a>
                 </Link>
                 <Link href="#services">
-                  <a className="btn btn-light me-3">Our Services</a>
+                  <a className="btn btn-light mt-2 mt-sm-0 me-3">
+                    Our Services
+                  </a>
                 </Link>
               </div>
             </div>
