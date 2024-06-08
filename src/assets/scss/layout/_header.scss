@@ -56,12 +56,12 @@
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
-.main-menu{
-  li.nav-item{
+.main-menu {
+  li.nav-item {
     position: relative;
-    .dropdown-menu{
-      &:before{
-        content: "";
+    .dropdown-menu {
+      &:before {
+        content: '';
         position: absolute;
         top: -9px;
         left: 50%;
@@ -74,16 +74,16 @@
         transition: all 0.3s ease;
       }
     }
-    &:hover{
-      .dropdown-menu{
-        &:before{
+    &:hover {
+      .dropdown-menu {
+        &:before {
           opacity: 1;
         }
       }
     }
   }
-  li{
-    a.nav-link{
+  li {
+    a.nav-link {
       padding: 0.85rem 1rem;
       font-size: $font-size-md;
       font-weight: $font-weight-medium-light;
@@ -143,15 +143,14 @@
 .navbar-dark.sticky-header.affix .action-btns a.btn-link:hover {
   color: $primary;
 }
-.dropdown-grid-item{
-  a{
+.dropdown-grid-item {
+  a {
     display: flex;
     align-items: center;
     text-decoration: none;
     padding: 0.55rem 1rem !important;
     transition: $transition-base;
     border-radius: 4px;
-    
   }
   .drop-heading {
     padding-left: 1rem;
@@ -165,23 +164,21 @@
   }
 }
 
-
 .dropdown-grid-item a:hover .drop-title,
 .dropdown-grid-item a:hover span {
   color: var(--bs-primary);
   opacity: 1;
 }
-.dropdown-grid-item span.dropdown-info span:not(.drop-title){
+.dropdown-grid-item span.dropdown-info span:not(.drop-title) {
   opacity: 0.8;
   font-size: 13px;
   transition: $transition-base;
- 
 }
-.dropdown-grid-item a:hover{
-  &:hover{
+.dropdown-grid-item a:hover {
+  &:hover {
     background: $gray-200;
   }
-  span.dropdown-info span:not(.drop-title){
+  span.dropdown-info span:not(.drop-title) {
     color: $body-color;
   }
 }
@@ -195,32 +192,32 @@
 .dropdown-info {
   display: flex;
   flex-direction: column;
-  p{
+  p {
     font-size: 13px;
     margin-bottom: 0;
   }
 }
-.offcanvas.show{
+.offcanvas.show {
   visibility: visible;
   z-index: 9999;
 }
 
-.offcanvas-backdrop{
-  &:before{
+.offcanvas-backdrop {
+  &:before {
     display: none;
   }
-
 }
 .offcanvas-header button.close-btn {
-  background: rgba($danger, .12);
-  width: 30px;
-  height: 30px;
+  // background: rgba($danger, 0.12);
+  background: rgb(158, 44, 44);
+  width: 40px;
+  height: 40px;
   text-align: center;
   outline: none;
   box-shadow: none;
   border: none;
   border-radius: 20px;
-  i{
+  i {
     line-height: 29px;
   }
 }
@@ -273,8 +270,7 @@
   vertical-align: middle;
 }
 
-
-/*********ins header ***********/ 
+/*********ins header ***********/
 .ins-header {
   position: relative;
   z-index: 3;

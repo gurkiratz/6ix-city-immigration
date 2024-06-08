@@ -9,9 +9,21 @@ import {
   BiUser,
   BiError,
 } from 'react-icons/bi'
-import { HiOutlineAcademicCap } from 'react-icons/hi'
+import { HiAcademicCap, HiOutlineAcademicCap } from 'react-icons/hi'
 import { BsHeadset } from 'react-icons/bs'
-import { FaLaptopCode, FaRegClock, FaRegTrashAlt } from 'react-icons/fa'
+import {
+  FaGlobeAmericas,
+  FaLaptopCode,
+  FaPassport,
+  FaRegClock,
+  FaRegTrashAlt,
+} from 'react-icons/fa'
+import { SiAircanada } from 'react-icons/si'
+import { MdFamilyRestroom } from 'react-icons/md'
+import { CgAirplane } from 'react-icons/cg'
+import { GrUserWorker } from 'react-icons/gr'
+import { HiBuildingOffice2 } from 'react-icons/hi2'
+import { FaPersonCircleCheck } from 'react-icons/fa6'
 
 const IconBoxData = [
   {
@@ -709,6 +721,73 @@ const offcanvasMenuData = [
     title: 'Sass Marketing',
     info: 'Sass Marketing Landing Page',
     href: 'sass-marketing',
+  },
+]
+
+const navServicesData = [
+  {
+    id: 1,
+    title: 'Express Entry',
+    serviceDesc: 'CEC, FSW, FST, Occupational based draws',
+    icon: <SiAircanada />,
+    href: '/',
+  },
+  {
+    id: 2,
+    title: 'Family class sponsorship',
+    serviceDesc: 'Parents Sponsorship | Spousal Sposorship',
+    icon: <MdFamilyRestroom />,
+    href: '/',
+  },
+  {
+    id: 3,
+    title: 'Visitor / Super Visa',
+    serviceDesc: 'Visitor / Super Visa',
+    icon: <CgAirplane />,
+    href: '/',
+  },
+  {
+    id: 4,
+    title: 'LMIA',
+    serviceDesc: 'PR Support & Dual Intent',
+    icon: <FaPassport />,
+    href: '/',
+  },
+  {
+    id: 5,
+    title: 'Study Permit',
+    serviceDesc: 'Initial Permit or Permit Extension',
+    icon: <HiAcademicCap />,
+    href: '/',
+  },
+  {
+    id: 6,
+    title: 'Work Permit',
+    serviceDesc:
+      'PGWP, Spousal Work Permit, Co-op Work Permit, BOWP, LMIA Based Work Permit',
+    icon: <GrUserWorker />,
+    href: '/',
+  },
+  {
+    id: 7,
+    title: 'TRV',
+    serviceDesc: 'Study Visa | Work Visa | Visitor Record',
+    icon: <HiBuildingOffice2 />,
+    href: '/',
+  },
+  {
+    id: 8,
+    title: 'Citizenship',
+    serviceDesc: 'Canadian Citizenship',
+    icon: <FaPersonCircleCheck />,
+    href: '/',
+  },
+  {
+    id: 9,
+    title: 'International',
+    serviceDesc: 'USA / UK / India Visa',
+    icon: <FaGlobeAmericas />,
+    href: '/',
   },
 ]
 
@@ -2001,6 +2080,7 @@ export {
   registerTestimonialTarget,
   navHomeOne,
   navHomeTwo,
+  navServicesData,
   navCompanyLinks,
   navCompanyPage,
   footerPrimaryPages,
