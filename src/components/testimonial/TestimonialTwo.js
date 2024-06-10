@@ -13,7 +13,7 @@ const TestimonialTwo = ({ sectionBgClass, swiperBgClass }) => {
     slidesPerView: 2,
     mousewheel: true,
     spaceBetween: 30,
-    slidesPerGroup: 2,
+    slidesPerGroup: 1,
     loop: true,
     navigation: {
       nextEl: '.swiper-nav-control .swiper-button-next',
@@ -45,7 +45,7 @@ const TestimonialTwo = ({ sectionBgClass, swiperBgClass }) => {
       <section
         className={`testimonial-section ${
           sectionBgClass ? sectionBgClass : 'bg-light'
-        } ptb-120`}
+        } pt-100`}
       >
         <div className="container">
           <div className="row justify-content-center align-content-center">
@@ -54,9 +54,7 @@ const TestimonialTwo = ({ sectionBgClass, swiperBgClass }) => {
                 <SectionTitle
                   subtitle="Testimonial"
                   title="What They Say About Us"
-                  description="Dynamically initiate market positioning total linkage with
-                  clicks-and-mortar technology compelling data for cutting-edge
-                  markets."
+                  description="Hear from our satisfied clients about their experiences and success stories with 6ix City Immigration Inc."
                   darkBg
                   centerAlign
                 />
@@ -64,9 +62,7 @@ const TestimonialTwo = ({ sectionBgClass, swiperBgClass }) => {
                 <SectionTitle
                   subtitle="Testimonial"
                   title="What They Say About Us"
-                  description="Dynamically initiate market positioning total linkage with
-                clicks-and-mortar technology compelling data for cutting-edge
-                markets."
+                  description="Hear from our satisfied clients about their experiences and success stories with 6ix City Immigration Inc."
                   centerAlign
                 />
               )}

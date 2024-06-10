@@ -18,9 +18,9 @@ const AboutUs = () => {
       {/* <HeroSectionTwo /> */}
       <OurStory />
       {/* <FeatureImgContentTwo /> */}
-      <OurTeam />
       <TestimonialTwo swiperBgClass="bg-white" />
-      <OurOffice />
+      {/* <OurTeam /> */}
+      {/* <OurOffice /> */}
       <SupportOne className="true" />
       <FooterTwo footerLight />
     </Layout>

@@ -1,17 +1,17 @@
-import Link from "next/link";
-import { FaRegCheckCircle } from "react-icons/fa";
-import React, { useState } from "react";
-import { IoPlayCircleOutline } from "react-icons/io5";
-import ModalVideo from "react-modal-video";
+import Link from 'next/link'
+import { FaRegCheckCircle } from 'react-icons/fa'
+import React, { useState } from 'react'
+import { IoPlayCircleOutline } from 'react-icons/io5'
+import ModalVideo from 'react-modal-video'
 
 const SupportOne = ({ className }) => {
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(false)
   return (
     <section
       className={`${
         className
-          ? "cta-subscribe bg-dark ptb-120 position-relative overflow-hidden"
-          : "cta-subscribe pt-60 pb-120"
+          ? 'cta-subscribe bg-dark ptb-120 position-relative overflow-hidden'
+          : 'cta-subscribe pt-60 pb-120'
       }`}
     >
       <ModalVideo
@@ -24,21 +24,19 @@ const SupportOne = ({ className }) => {
         <div
           className={`${
             className
-              ? ""
-              : "bg-gradient ptb-120 px-4 position-relative overflow-hidden rounded-custom"
+              ? ''
+              : 'bg-gradient ptb-120 px-4 position-relative overflow-hidden rounded-custom'
           }`}
         >
           <div className="row justify-content-center">
             <div className="col-lg-7 col-md-8">
               <div className="subscribe-info-wrap text-center position-relative z-2">
                 <div className="section-heading">
-                  <h4 className="h5 text-warning">
-                    Let&apos;s Try! Get Free Support
-                  </h4>
-                  <h2>Start Your 14-Day Free Trial</h2>
+                  <h4 className="h5 text-warning">Why Choose Us</h4>
+                  <h2>Your Trusted Immigration Partner</h2>
                   <p>
-                    We can help you to create your dream website for better
-                    business revenue.
+                    Expert guidance and personalized service to help you achieve
+                    your Canadian immigration goals.
                   </p>
                 </div>
                 <div className="form-block-banner mw-60 m-auto mt-5">
@@ -59,26 +57,26 @@ const SupportOne = ({ className }) => {
                 <ul className="nav justify-content-center subscribe-feature-list mt-4">
                   <li className="nav-item">
                     <span>
-                      <FaRegCheckCircle className="far me-2 text-primary" />
-                      Free 14-day trial
+                      <FaRegCheckCircle className="far me-2 text-info" />
+                      Visa Assistance
                     </span>
                   </li>
                   <li className="nav-item">
                     <span>
-                      <FaRegCheckCircle className="far me-2 text-primary" />
-                      No credit card required
+                      <FaRegCheckCircle className="far me-2 text-info" />
+                      Cost-Effective
                     </span>
                   </li>
                   <li className="nav-item">
                     <span>
-                      <FaRegCheckCircle className="far me-2 text-primary" />
-                      Support 24/7
+                      <FaRegCheckCircle className="far me-2 text-info" />
+                      Trusted by Clients
                     </span>
                   </li>
                   <li className="nav-item">
                     <span>
-                      <FaRegCheckCircle className="far me-2 text-primary" />
-                      Cancel anytime
+                      <FaRegCheckCircle className="far me-2 text-info" />
+                      Faster Processing
                     </span>
                   </li>
                 </ul>
@@ -90,7 +88,7 @@ const SupportOne = ({ className }) => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default SupportOne;
+export default SupportOne
