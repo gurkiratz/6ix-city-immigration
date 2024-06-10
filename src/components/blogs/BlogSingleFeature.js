@@ -1,7 +1,7 @@
-import React from 'react';
-import Image from 'next/image';
+import React from 'react'
+import Image from 'next/image'
 
-import ProfileCard from './ProfileCard';
+import ProfileCard from './ProfileCard'
 
 const BlogSingleFeature = () => {
   return (
@@ -12,52 +12,54 @@ const BlogSingleFeature = () => {
             <div className="col-lg-8 pe-5">
               <div className="blog-details-wrap">
                 <p>
-                  Objectively restore stand-alone markets rather than
-                  enterprise-wide products. Uniquely underwhelm best-of-breed
-                  mindshare through adaptive niches. Interactively leverage
-                  existing innovative e-services seamlessly parallel task
-                  open-source content without resource sucking technology.
+                  The Canada Express Entry Program is a focuses based migration
+                  program for experts hoping to get comfortable in Canada. It
+                  grants focus to experts dependent on abilities, experience,
+                  Canadian work status and common/regional assignment. The
+                  higher your focuses, the more prominent your odds of accepting
+                  an encouragement to Apply (ITA) for Permanent Residency in
+                  Canada. Normally PR applications submitted through this course
+                  are prepared in 6 a year or less. Take advantage of this
+                  rewarding project with us. We are renowned experts on Canadian
+                  movement and can help you plan each progression of your
+                  migration interaction.
                 </p>
-                <p>
-                  Dramatically cultivate frictionless communities with
-                  enterprise-wide customer service. Dramatically simplify
-                  web-enabled growth strategies rather than integrated
-                  imperatives. Interactively leverage existing innovative
-                  e-services customer service. Intrinsicly impact web-enabled
-                  value vis-a-vis innovative customer service. Continually
-                  procrastinate efficient growth strategies for backend
-                  experiences.
-                </p>
+
                 <div className="blog-details-info mt-5">
-                  <h3 className="h5">Customer retention is key</h3>
+                  <h3 className="h4">
+                    Here are a few details about the program:
+                  </h3>
+                  <p>
+                    The Express Entry program has smoothed out migration for
+                    experts and made the interaction more straightforward.
+                  </p>
+                  <p className="h6">Key subtleties of the program are:</p>
                   <ul className="content-list list-unstyled">
                     <li>
-                      Be involved in every step of the product design cycle from
-                      discovery and user acceptance testing.
+                      This is an online program which has no cap on candidates
+                      and is open consistently
                     </li>
                     <li>
-                      Work with BAs, product managers and tech teams to lead the
-                      Product Design
+                      The program applies just to Federal Skilled Worker
+                      Program, Federal Skilled Trades Program, and Canadian
+                      Experience Class Immigration Program
                     </li>
                     <li>
-                      Maintain quality of the design process and ensure that
-                      when designs are translated into code they accurately.
+                      You should present an Expression of Interest and apply as
+                      a candidate under a task referenced in Skill Types 0, An
+                      and B
                     </li>
                     <li>
-                      Accurately estimate design tickets during planning
-                      sessions.
+                      Your profile will be assessed dependent on focuses and
+                      will be set in the candidate pool
                     </li>
                     <li>
-                      Contribute to sketching sessions involving
-                      non-designersCreate, and pattern libraries.
+                      Canadian regions and bosses will get to this pool and
+                      discover ability to address their issues
                     </li>
                     <li>
-                      Design pixel perfect responsive UI’s and understand that
-                      adopting common interface
-                    </li>
-                    <li>
-                      Interface patterns is better for UX than reinventing the
-                      wheel
+                      The most noteworthy focuses holders are sent an Invitation
+                      to Apply for PR
                     </li>
                   </ul>
                   <blockquote className="bg-white custom-shadow p-5 mt-5 rounded-custom border-4 border-primary border-top">
@@ -75,70 +77,71 @@ const BlogSingleFeature = () => {
                     </p>
                   </blockquote>
                 </div>
-                <Image
+                {/* <Image
                   width={820}
                   height={351}
                   src="/tab-feature-img-4.png"
                   className="img-fluid mt-4 rounded-custom"
                   alt="apply"
-                />
+                /> */}
+
                 <div className="job-details-info mt-5">
-                  <h3 className="h5">
-                    Focus on increasing customer retention first
+                  <h3 className="h4">
+                    What is the eligibility criteria for the Express visa?
                   </h3>
                   <p>
-                    Appropriately fashion ubiquitous information without
-                    future-proof growth strategies. Interactively morph
-                    cutting-edge e-business before functional potentialities.
-                    Compellingly syndicate empowered communities via multimedia
-                    based schemas. Objectively productize granular materials
-                    whereas quality solutions. Collaboratively reinvent
-                    innovative paradigms and low-risk high-yield action items.
+                    The Canada Express Entry Program depends on a focuses based
+                    framework to assess candidates. The fundamental goal of this
+                    framework is to recognize candidates who have the most
+                    elevated possibility of prevailing after they relocate to
+                    Canada. The focuses scale has a greatest score of 1200 and
+                    assesses you and your spouse (assuming any) on your:
                   </p>
                   <ul className="content-list list-unstyled">
-                    <li>
-                      Interactively plagiarize covalent outside the box
-                      thinking vis-a-vis.
-                    </li>
-                    <li>
-                      Holisticly communicate integrated channels via backend
-                      interfaces. Authoritatively.
-                    </li>
-                    <li>
-                      Globally actualize effective processes through synergistic
-                      ROI. Interactively.
-                    </li>
+                    <li>Age</li>
+                    <li>The most significant level of higher education</li>
+                    <li>Online enlistment CAD: 300 non-refundable (a month)</li>
+                    <li>Language abilities</li>
+                    <li>Canadian work insight</li>
+                    <li>Other work insight</li>
+                    <li>Ability adaptability</li>
+                    <li>Different components</li>
                   </ul>
                 </div>
 
                 <div className="blog-details-info mt-5">
-                  <h3 className="h5">Skill & Experience</h3>
+                  <h3 className="h4">
+                    Advantages of the Express Entry System:
+                  </h3>
                   <ul className="content-list list-unstyled">
                     <li>
-                      You have at least 3 years’ experience working as a Product
-                      Designer.
+                      One benefit of this migration program is its
+                      straightforwardness. Candidates will realize the CRS
+                      focuses they should score to be qualified for the
+                      Invitation to Apply (ITA) for lasting home.
                     </li>
                     <li>
-                      You have experience using Sketch and InVision or Framer X
+                      Applicants will know about the middle score they ought to
+                      acquire to meet all requirements for the ITA, in the event
+                      that they don&apos;t make the imprint, they can generally
+                      put forth attempts to improve their CRS score or think
+                      about different CRS choices.
                     </li>
                     <li>
-                      You have some previous experience working in an agile
-                      environment – Think two-week sprints.
-                    </li>
-                    <li>
-                      You are familiar using Jira and Confluence in your
-                      workflow
+                      They can take a gander at improving their language test
+                      results, or on acquiring extra work insight, see choices
+                      to concentrate in Canada or go after a common designation.
                     </li>
                   </ul>
                 </div>
 
-                <Image
+                {/* <Image
                   width={820}
                   height={355}
                   src="/tab-feature-img-2.png"
                   className="img-fluid mt-5 rounded-custom"
                   alt="apply"
-                />
+                /> */}
               </div>
             </div>
             <div className="col-lg-4">
@@ -148,7 +151,7 @@ const BlogSingleFeature = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default BlogSingleFeature;
+export default BlogSingleFeature

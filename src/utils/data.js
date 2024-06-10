@@ -730,14 +730,14 @@ const navServicesData = [
     title: 'Express Entry',
     serviceDesc: 'CEC, FSW, FST, Occupational based draws',
     icon: <SiAircanada />,
-    href: '/',
+    href: '/services/express-entry',
   },
   {
     id: 2,
     title: 'Family class sponsorship',
     serviceDesc: 'Parents Sponsorship | Spousal Sposorship',
     icon: <MdFamilyRestroom />,
-    href: '/',
+    href: '/services/family-class-sponsorship',
   },
   {
     id: 3,

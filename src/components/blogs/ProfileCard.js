@@ -1,8 +1,8 @@
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import dynamic from 'next/dynamic';
-import { FaFacebookF, FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import dynamic from 'next/dynamic'
+import { FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 
 const ProfileCard = () => {
   return (
@@ -10,13 +10,13 @@ const ProfileCard = () => {
       <Image
         width={120}
         height={120}
-        src="/team/team-2.jpg"
+        src="/team/harsh.jpg"
         alt="author"
         className="img-fluid shadow-sm rounded-circle"
       />
       <div className="author-info my-4">
-        <h5 className="mb-0">Elena Mou</h5>
-        <span className="small">Head of Designer</span>
+        <h5 className="mb-0">Harshpreet Kaur</h5>
+        <span className="small">RCIC Consultant</span>
       </div>
       <p>
         Uniquely communicate open-source technology after value-added ideas.
@@ -24,29 +24,21 @@ const ProfileCard = () => {
       </p>
       <ul className="list-unstyled author-social-list list-inline mt-3 mb-0">
         <li className="list-inline-item">
-          <Link href="#!" passHref>
+          <Link href="https://wa.me/16477060054" passHref>
             <a className="fab">
-              <FaLinkedinIn />
+              <FaWhatsapp />
             </a>
           </Link>
         </li>
         <li className="list-inline-item">
-          <Link href="#!" passHref>
+          <Link href="https://www.instagram.com/6ixcityimmigration/" passHref>
             <a className="fab">
-              <FaTwitter />
+              <FaInstagram />
             </a>
           </Link>
         </li>
         <li className="list-inline-item">
-          <Link href="#!" passHref>
-            <a className="fab">
-              {' '}
-              <FaGithub />
-            </a>
-          </Link>
-        </li>
-        <li className="list-inline-item">
-          <Link href="#!" passHref>
+          <Link href="https://www.facebook.com/6ixcityimmigration" passHref>
             <a className="fab">
               <FaFacebookF />
             </a>
@@ -54,7 +46,7 @@ const ProfileCard = () => {
         </li>
       </ul>
     </div>
-  );
-};
+  )
+}
 
-export default dynamic(() => Promise.resolve(ProfileCard), { ssr: false });
+export default dynamic(() => Promise.resolve(ProfileCard), { ssr: false })
