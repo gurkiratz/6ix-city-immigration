@@ -20,10 +20,10 @@ const FooterTwo = () => {
               <div className="">
                 <div className="footer-single-col mb-4">
                   <Image
-                    src="/logo-white.png"
+                    src="/logo-dark.png"
                     alt="logo"
-                    width={113}
-                    height={36}
+                    width={175}
+                    height={60}
                     className="img-fluid logo-white"
                   />
                 </div>
@@ -63,29 +63,45 @@ const FooterTwo = () => {
                     <h3 className="h5 mb-4 text-white">Our Services</h3>
                     <ul className="list-unstyled footer-nav-list mb-lg-0">
                       <li>
-                        <a className="text-decoration-none">Express Entry</a>
+                        <Link
+                          className="text-decoration-none"
+                          href="/services/express-entry"
+                        >
+                          Express Entry
+                        </Link>
                       </li>
                       <li>
-                        <a className="text-decoration-none">
+                        <Link
+                          className="text-decoration-none"
+                          href="/services/family-class-sponsorship"
+                        >
                           Family Class Sponsorship
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="text-decoration-none">
+                        <Link className="text-decoration-none" href="/">
                           Visitor/Super Visa
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="text-decoration-none">LMIA</a>
+                        <Link className="text-decoration-none" href="/">
+                          LMIA
+                        </Link>
                       </li>
                       <li>
-                        <a className="text-decoration-none">Study Permit</a>
+                        <Link className="text-decoration-none" href="/">
+                          Study Permit
+                        </Link>
                       </li>
                       <li>
-                        <a className="text-decoration-none">Work Permit</a>
+                        <Link className="text-decoration-none" href="/">
+                          Work Permit
+                        </Link>
                       </li>
                       <li>
-                        <a className="text-decoration-none">Citizenship</a>
+                        <Link className="text-decoration-none" href="/">
+                          Citizenship
+                        </Link>
                       </li>
                     </ul>
                   </div>
