@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { navServicesData } from '../../utils/data'
+import { servicesData } from '../../utils/data'
 
 const OffCanvasMenu = () => {
   return (
@@ -24,7 +24,7 @@ const OffCanvasMenu = () => {
           <div className="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
             <div className="dropdown-grid rounded-custom width-full">
               <div className="dropdown-grid-item">
-                {navServicesData.map((navLink, i) => (
+                {servicesData.map((navLink, i) => (
                   <span key={i + 1}>
                     <Link href={navLink.href}>
                       <a

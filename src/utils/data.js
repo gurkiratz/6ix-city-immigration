@@ -724,41 +724,51 @@ const offcanvasMenuData = [
   },
 ]
 
-const navServicesData = [
+const servicesData = [
   {
     id: 1,
     title: 'Express Entry',
     serviceDesc: 'CEC, FSW, FST, Occupational based draws',
     icon: <SiAircanada />,
+    component: SiAircanada,
     href: '/services/express-entry',
+    color: 'danger',
   },
   {
     id: 2,
     title: 'Family class sponsorship',
     serviceDesc: 'Parents Sponsorship | Spousal Sposorship',
     icon: <MdFamilyRestroom />,
+    component: MdFamilyRestroom,
     href: '/services/family-class-sponsorship',
+    color: 'success',
   },
   {
     id: 3,
     title: 'Visitor / Super Visa',
     serviceDesc: 'Visitor / Super Visa',
     icon: <CgAirplane />,
+    component: CgAirplane,
     href: '/',
+    color: 'info',
   },
   {
     id: 4,
     title: 'LMIA',
     serviceDesc: 'PR Support & Dual Intent',
     icon: <FaPassport />,
+    component: FaPassport,
     href: '/',
+    color: 'warning',
   },
   {
     id: 5,
     title: 'Study Permit',
     serviceDesc: 'Initial Permit or Permit Extension',
     icon: <HiAcademicCap />,
+    component: HiAcademicCap,
     href: '/',
+    color: 'info',
   },
   {
     id: 6,
@@ -766,28 +776,36 @@ const navServicesData = [
     serviceDesc:
       'PGWP, Spousal Work Permit, Co-op Work Permit, BOWP, LMIA Based Work Permit',
     icon: <GrUserWorker />,
+    component: GrUserWorker,
     href: '/',
+    color: 'danger',
   },
   {
     id: 7,
     title: 'TRV',
     serviceDesc: 'Study Visa | Work Visa | Visitor Record',
     icon: <HiBuildingOffice2 />,
+    component: HiBuildingOffice2,
     href: '/',
+    color: 'danger',
   },
   {
     id: 8,
     title: 'Citizenship',
     serviceDesc: 'Canadian Citizenship',
     icon: <FaPersonCircleCheck />,
+    component: FaPersonCircleCheck,
     href: '/',
+    color: 'success',
   },
   {
     id: 9,
     title: 'International',
     serviceDesc: 'USA / UK / India Visa',
     icon: <FaGlobeAmericas />,
+    component: FaGlobeAmericas,
     href: '/',
+    color: 'info',
   },
 ]
 
@@ -2080,7 +2098,7 @@ export {
   registerTestimonialTarget,
   navHomeOne,
   navHomeTwo,
-  navServicesData,
+  servicesData,
   navCompanyLinks,
   navCompanyPage,
   footerPrimaryPages,
