@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 
-import SectionTitle from '../common/SectionTitle';
-import { blogFeatureData } from '../../utils/data';
+import SectionTitle from '../common/SectionTitle'
+import { blogFeatureData } from '../../utils/data'
 
 const LatestBlog = () => {
   return (
@@ -13,14 +13,14 @@ const LatestBlog = () => {
         <div className="row align-items-center justify-content-between">
           <div className="col-lg-4 col-md-12">
             <SectionTitle
-              subtitle="Blog"
-              title="Check our Latest News and Update"
+              subtitle="Services"
+              title="Check Out Other Services We Provide"
             />
           </div>
           <div className="col-lg-7 col-md-12">
             <div className="text-start text-lg-end mb-4 mb-lg-0 mb-xl-0">
-              <Link href="/blogs">
-                <a className="btn btn-primary"> View All Article</a>
+              <Link href="/services">
+                <a className="btn btn-primary"> View All Services</a>
               </Link>
             </div>
           </div>
@@ -82,7 +82,7 @@ const LatestBlog = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default LatestBlog;
+export default LatestBlog

@@ -31,7 +31,7 @@ const FooterTwo = () => {
                   Curious about the latest updates? follow us on social media.
                   Send a message on Whatsapp for a quick reply.
                 </p>
-                <ul className="list-unstyled list-inline cyber-footer-social-list mb-0">
+                <ul className="list-unstyled list-inline footer-social-list mb-0">
                   <li className="list-inline-item">
                     <a href="https://wa.me/16477060054">
                       <i>

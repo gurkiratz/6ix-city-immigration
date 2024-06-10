@@ -83,17 +83,17 @@ const Navbar = ({ navDark, insurance, classOption }) => {
               </li>
 
               <li>
-                <Link href="services">
+                <Link href="/services">
                   <a className="nav-link">Services</a>
                 </Link>
               </li>
               <li>
-                <Link href="about-us">
+                <Link href="/about-us">
                   <a className="nav-link">About</a>
                 </Link>
               </li>
               <li>
-                <Link href="contact-us">
+                <Link href="/contact-us">
                   <a className="nav-link">Contact</a>
                 </Link>
               </li>
