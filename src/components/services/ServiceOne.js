@@ -1,92 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { BsArrowRight } from 'react-icons/bs'
-import {
-  HiOutlineCog,
-  HiOutlineDocumentReport,
-  HiOutlineUsers,
-} from 'react-icons/hi'
-import { MdFamilyRestroom } from 'react-icons/md'
-import { SiAircanada } from 'react-icons/si'
-import { FaPassport } from 'react-icons/fa'
-import { CgAirplane } from 'react-icons/cg'
-import { HiAcademicCap } from 'react-icons/hi2'
-import { GrUserWorker } from 'react-icons/gr'
-import { HiBuildingOffice2 } from 'react-icons/hi2'
-import { FaPersonCircleCheck } from 'react-icons/fa6'
-import { FaGlobeAmericas } from 'react-icons/fa'
-
-import { SiSimpleanalytics } from 'react-icons/si'
-import { IoGitCompareOutline } from 'react-icons/io5'
-import { FaCheckCircle } from 'react-icons/fa'
+import { servicesData } from '@utils/data'
 import SectionTitle from '../common/SectionTitle'
-
-const servicesData = [
-  {
-    id: 1,
-    serviceTitle: 'Express Entry',
-    serviceDesc: 'CEC, FSW, FST, Occupational based draws',
-    component: SiAircanada,
-    color: 'danger',
-  },
-  {
-    id: 2,
-    serviceTitle: 'Family class sponsorship',
-    serviceDesc: 'Parents Sponsorship | Spousal Sposorship',
-    component: MdFamilyRestroom,
-    color: 'success',
-  },
-  {
-    id: 3,
-    serviceTitle: 'Visitor / Super Visa',
-    serviceDesc: 'Visitor / Super Visa',
-    component: CgAirplane,
-    color: 'info',
-  },
-  {
-    id: 4,
-    serviceTitle: 'LMIA',
-    serviceDesc: 'PR Support & Dual Intent',
-    component: FaPassport,
-    color: 'warning',
-  },
-  {
-    id: 5,
-    serviceTitle: 'Study Permit',
-    serviceDesc: 'Initial Permit or Permit Extension',
-    component: HiAcademicCap,
-    color: 'info',
-  },
-  {
-    id: 6,
-    serviceTitle: 'Work Permit',
-    serviceDesc:
-      'PGWP, Spousal Work Permit, Co-op Work Permit, BOWP, LMIA Based Work Permit',
-    component: GrUserWorker,
-    color: 'danger',
-  },
-  {
-    id: 7,
-    serviceTitle: 'TRV',
-    serviceDesc: 'Study Visa | Work Visa | Visitor Record',
-    component: HiBuildingOffice2,
-    color: 'danger',
-  },
-  {
-    id: 8,
-    serviceTitle: 'Citizenship',
-    serviceDesc: 'Canadian Citizenship',
-    component: FaPersonCircleCheck,
-    color: 'success',
-  },
-  {
-    id: 9,
-    serviceTitle: 'International',
-    serviceDesc: 'USA / UK / India Visa',
-    component: FaGlobeAmericas,
-    color: 'info',
-  },
-]
 
 const ServiceOne = ({ bgDark }) => {
   const renderedServices = servicesData.map((service) => {
@@ -107,10 +23,10 @@ const ServiceOne = ({ bgDark }) => {
           </span>
         </div>
         <div className="feature-content">
-          <h3 className="h5">{service.serviceTitle.toUpperCase()}</h3>
+          <h3 className="h5">{service.title.toUpperCase()}</h3>
           <p className="mb-0">{service.serviceDesc}</p>
         </div>
-        <Link href="/career-single">
+        <Link href={service.href}>
           <a className="link-with-icon text-decoration-none mt-3">
             View Details{' '}
             <i className="far mb-1">
