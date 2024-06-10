@@ -20,9 +20,8 @@ const TestimonialOne = ({ darkBg }) => {
               <h4 className="h5 text-warning text-primary">Testimonial</h4>
               <h2>What They Say About Us</h2>
               <p>
-                Uniquely promote adaptive quality vectors rather than
-                stand-alone e-markets. pontificate alternative architectures
-                whereas iterate.
+                Hear from our satisfied clients about their experiences and
+                success stories with 6ix City Immigration Inc.
               </p>
             </div>
           </div>
