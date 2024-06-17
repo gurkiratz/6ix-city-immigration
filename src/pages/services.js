@@ -21,7 +21,7 @@ const services = () => {
       <ServiceOne />
       <TestimonialTwo sectionBgClass="bg-white" swiperBgClass="bg-white" />
       {/* <SupportOne className="true" /> */}
-      <Footer />
+      <FooterTwo />
     </Layout>
   )
 }
