@@ -1,6 +1,15 @@
 import Link from 'next/link'
 
 const HeroSectionOne = () => {
+  const scrolltoHash = function (element_id) {
+    const element = document.getElementById(element_id)
+    element?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    })
+  }
+
   return (
     <section
       className="hero-section ptb-120 text-white bg-gradient"
@@ -26,11 +35,11 @@ const HeroSectionOne = () => {
                 <Link href="/request-demo">
                   <a className="btn btn-primary me-3">Request a Free Call</a>
                 </Link>
-                <Link href="#services">
+                <div onClick={() => scrolltoHash('services')}>
                   <a className="btn btn-light mt-2 mt-sm-0 me-3">
                     Our Services
                   </a>
-                </Link>
+                </div>
               </div>
             </div>
           </div>
