@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-
 import Rating from '../common/Rating'
 import VideoModal from '../common/VideoModal'
 import { testimonialAuthor, testimonialOne } from '../../utils/data'
@@ -66,8 +65,9 @@ const TestimonialOne = ({ darkBg }) => {
                       <div className="author-img-wrap pt-5 ps-5">
                         <div className="testimonial-video-wrapper position-relative">
                           <Image
-                            width={478}
-                            height={382}
+                            width={376}
+                            height={251}
+                            layout="responsive"
                             src={testimonial.image}
                             className="img-fluid rounded-custom shadow-lg"
                             alt="testimonial author"
@@ -100,6 +100,11 @@ const TestimonialOne = ({ darkBg }) => {
                     data-bs-target={`#testimonial-tab-${i + 1}`}
                     role="tab"
                     aria-selected="false"
+                    onClick={() =>
+                      document
+                        .querySelector('#testimonial-tabContent')
+                        .scrollIntoView({ behavior: 'smooth', block: 'center' })
+                    }
                   >
                     <div className="testimonial-thumb me-3">
                       <Image

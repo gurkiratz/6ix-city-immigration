@@ -369,7 +369,7 @@ const testimonialOne = [
     header: 'First my Work Permit Extension, then LMIA and now my PR!',
     description:
       "Whoever is reading this review if you are thinking about the services from 6ix city immigration its worth your time and money. This review is long pending I got into contact with Harsh through a friend. I got my work permit extension by her, LMIA and now my PR. She always adviced me in my favour. I'm glad that i trusted her and everything happened as she said. I could have added this review a long ago but i wanted to share my thorough experience. Thanks Harsh for being patient and generous even on the days when i was stressing out.",
-    image: '/testimonial/t-2.jpg',
+    image: '/testimonial/client-3.jpg',
     target: 'testimonial-tab-1',
     active: 'active show',
   },
@@ -379,7 +379,7 @@ const testimonialOne = [
     header: 'I had many questions...',
     description:
       'I had many questions when I first called Harshpreet regarding common law work permit extension. She answered everything and listened to me very calmly and helped us throughout the entire process by staying in constant touch with us. Thank you for all the help. I would definitely recommend 6ix city immigration for your immigration needs.',
-    image: '/testimonial/t-1.jpg',
+    image: '/testimonial/client-1.jpg',
     target: 'testimonial-tab-2',
   },
   {
@@ -388,7 +388,7 @@ const testimonialOne = [
     header: 'With 6 consecutive 100% success rate cases for me!',
     description:
       "The number one go to person for all your immigration needs. Harsh treats all her cases as if they are her own. With 6 consecutive 100% success rate cases for me personally from work permit, PR, Parent's Super Visa, Visitor, US Visa to Spousal PR visa. They treat their clients as family. I highly recommend them as the most dedicated immigration consultant in town.",
-    image: '/testimonial/t-1.jpg',
+    image: '/testimonial/client-3.jpg',
     target: 'testimonial-tab-2',
   },
 
@@ -398,7 +398,7 @@ const testimonialOne = [
     header: 'I had a PR application refused due to a clerical error!',
     description:
       'I would highly recommend 6ix City Immigration Inc to anyone who needs immigration services. Harshpreet has great knowledge with immigration regulations and can assist with complicated scenarios. In my case, I consulted 6ix city immigration services after I had a PR application refused due to a clerical error. I also had a work permit expiring soon at the time. Harshpreet took the time to understand the situation and gave me proper guidance on the next steps. Throughout the process they were also available to answer any questions and issues I had. They were also very thorough in vetting the required documents for my application which made me wish  I had used their services the first time around and saved a lot of time and anguish. Since then I have referred a few people to their services and all of them have had good experiences.',
-    image: '/testimonial/t-2.jpg',
+    image: '/testimonial/client-2.jpg',
     target: 'testimonial-tab-3',
   },
   {
@@ -407,7 +407,7 @@ const testimonialOne = [
     header: 'Harshpreet mam is really wonderful and great with her work!',
     description:
       'Harshpreet mam is really wonderful and great with her work, she is patient and particular about everything, be it a simple process or a complicated one, she helped me with my extension visa and my file had some complications, but it went really smoothly, its all because of her!',
-    image: '/testimonial/t-3.jpg',
+    image: '/testimonial/client-2.jpg',
     target: 'testimonial-tab-4',
   },
   {
@@ -417,7 +417,7 @@ const testimonialOne = [
       "Harsh's in-depth knowledge of immigration laws and procedures gave me confidence and peace of mind!",
     description:
       'As someone seeking immigration assistance, I am grateful beyond words for choosing Harsh Preet Kaur 6ix City immigration lawyer. Harsh Preet Kaur impressed me with her professionalism, expertise, and dedication. She offered insightful advice and guidance throughout the entire immigration process. Her in-depth knowledge of immigration laws and procedures gave me confidence and peace of mind. Thanks to Harsh Preet, my immigration journey for granting family Visitor Visa & Work permit was a success. She navigated through the complexities of the process with expertise and unwavering commitment. I wholeheartedly recommend Harsh to anyone in need of immigration services. She is the epitome of excellence in her field and has positively impacted my life.',
-    image: '/testimonial/t-4.jpg',
+    image: '/testimonial/client-2.jpg',
     target: 'testimonial-tab-5',
   },
   {
@@ -426,7 +426,7 @@ const testimonialOne = [
     header: 'I had the best experience ever!',
     description:
       "My file for PR was applied by Harshpreet and I had the best experience ever as I had nothing to worry for. She took all the pain and explains everything in detail and nicely with lots of patience. She broke down the complete process step by step and she is just one call away for the solutions of any problem you face. I don't think I would have got any other better agent for myself. Come guys and get your work done stress free.",
-    image: '/testimonial/t-4.jpg',
+    image: '/testimonial/client-1.jpg',
     target: 'testimonial-tab-6',
   },
   {
@@ -435,7 +435,7 @@ const testimonialOne = [
     header: "I got my Permanent Residence recently with Harshpreet's guidance!",
     description:
       "Thank you 6ix city immigration for your excellent service. I got my Permanent Residence recently with Harshpreet's guidance and my experience with 6ix city immigration was amazing. She is really helpful and answered all my questions and concern at all hours and I definitely recommend their service for any Immigration purposes.",
-    image: '/testimonial/t-4.jpg',
+    image: '/testimonial/client-4.jpg',
     target: 'testimonial-tab-6',
   },
   {
@@ -444,7 +444,7 @@ const testimonialOne = [
     header: ' I highly recommend 6ix City Immigration Inc.!',
     description:
       "I had the pleasure of working with Harshpreet Kaur, my immigration consultant at 6ix City Immigration Inc., and I must say, my experience with this company was exceptional. I highly recommend 6ix City Immigration Inc. and specifically, Harshpreet Kaur, to anyone who is considering immigrating to Canada. The entire team at 6ix City Immigration Inc. are experts in their field and have a deep understanding of the immigration process. With Harshpreet's guidance and support, the entire process of immigrating to Canada became a smooth and seamless experience for me.",
-    image: '/testimonial/t-4.jpg',
+    image: '/testimonial/client-1.jpg',
     target: 'testimonial-tab-6',
   },
   {
@@ -453,7 +453,7 @@ const testimonialOne = [
     header: 'My parents had 3 visitor visa refusals!',
     description:
       'My parents had 3 visitor visa refusals. I was worried about their super visa application. Harshpreet is a wonderful professional. She answers all your questions and doubts in timely manner. Hats off to Harsh and her team, my parents got their super visa in less than 2 months. If you want to best use your time and money, I would highly recommend 6ix City Immigration to everyone.',
-    image: '/testimonial/t-4.jpg',
+    image: '/testimonial/client-3.jpg',
     target: 'testimonial-tab-6',
   },
 ]
