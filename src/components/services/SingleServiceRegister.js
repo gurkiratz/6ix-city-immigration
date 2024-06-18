@@ -104,10 +104,11 @@ const SingleServiceRegister = () => {
                     role="tab"
                   >
                     <img
-                      src="/testimonial/1.jpg"
+                      src="/testimonial/rv.jpg"
                       alt="testimonial"
                       width="55"
-                      className="img-fluid rounded-circle"
+                      height="55"
+                      className=" rounded-circle"
                     />
                   </button>
                 </li>
@@ -120,9 +121,10 @@ const SingleServiceRegister = () => {
                     role="tab"
                   >
                     <img
-                      src="/testimonial/4.jpg"
+                      src="/testimonial/jasmeen.png"
                       alt="testimonial"
                       width="55"
+                      height="55"
                       className="img-fluid rounded-circle"
                     />
                   </button>
@@ -136,9 +138,10 @@ const SingleServiceRegister = () => {
                     role="tab"
                   >
                     <img
-                      src="/testimonial/6.jpg"
+                      src="/testimonial/arshpreet.png"
                       alt="testimonial"
                       width="55"
+                      height="55"
                       className="img-fluid rounded-circle"
                     />
                   </button>

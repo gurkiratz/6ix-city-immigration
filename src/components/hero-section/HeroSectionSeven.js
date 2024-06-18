@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 
-import Link from 'next/link';
-import HeroTitle from '../common/HeroTitle';
-import React, { useState } from 'react';
-import { IoPlayCircleOutline } from 'react-icons/io5';
-import ModalVideo from 'react-modal-video';
+import Link from 'next/link'
+import HeroTitle from '../common/HeroTitle'
+import React, { useState } from 'react'
+import { IoPlayCircleOutline } from 'react-icons/io5'
+import ModalVideo from 'react-modal-video'
 
 const HeroSectionSeven = () => {
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(false)
   return (
     <>
       <section
@@ -17,11 +17,11 @@ const HeroSectionSeven = () => {
         }}
       >
         <ModalVideo
-        channel="youtube"
-        isOpen={isOpen}
-        videoId="hAP2QF--2Dg"
-        onClose={() => setOpen(false)}
-      />
+          channel="youtube"
+          isOpen={isOpen}
+          videoId="hAP2QF--2Dg"
+          onClose={() => setOpen(false)}
+        />
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-10">
@@ -32,7 +32,7 @@ const HeroSectionSeven = () => {
                   supply chains. Quickly engage client-centric web services."
                 />
                 <div className="action-btns mt-5 align-items-center d-block d-sm-flex d-lg-flex d-md-flex">
-                  <Link href="/request-demo">
+                  <Link href="/request-call">
                     <a className="btn btn-danger me-3">Request For Demo</a>
                   </Link>
                   <div>
@@ -127,7 +127,7 @@ const HeroSectionSeven = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default HeroSectionSeven;
+export default HeroSectionSeven

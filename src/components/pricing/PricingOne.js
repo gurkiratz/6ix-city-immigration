@@ -1,16 +1,16 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { BsCalendar2Check, BsCalendarX, BsCreditCard } from "react-icons/bs";
+import React from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
+import { BsCalendar2Check, BsCalendarX, BsCreditCard } from 'react-icons/bs'
 
-import Circle from "../common/Circle";
-import { pricingData } from "../../utils/data";
+import Circle from '../common/Circle'
+import { pricingData } from '../../utils/data'
 
 const PricingOne = ({ header, ptClass }) => {
   return (
     <section
       className={`pricing-section pb-120  position-relative z-2 ${
-        ptClass ? ptClass : ""
+        ptClass ? ptClass : ''
       }`}
     >
       <div className="container">
@@ -24,7 +24,7 @@ const PricingOne = ({ header, ptClass }) => {
                   <p>
                     Conveniently mesh cooperative services via magnetic
                     outsourcing. Dynamically grow value whereas accurate
-                    e-commerce vectors.{" "}
+                    e-commerce vectors.{' '}
                   </p>
                 </div>
               </div>
@@ -77,8 +77,8 @@ const PricingOne = ({ header, ptClass }) => {
               >
                 <div className="pricing-header mb-32">
                   <h3 className={`package-name ${pricing.textColor} d-block`}>
-                    {" "}
-                    {pricing.title}{" "}
+                    {' '}
+                    {pricing.title}{' '}
                   </h3>
                   <h4 className="display-6 fw-semi-bold">
                     {pricing.price}
@@ -95,7 +95,7 @@ const PricingOne = ({ header, ptClass }) => {
                     ))}
                   </ul>
                 </div>
-                <Link href="/request-demo">
+                <Link href="/request-call">
                   <a className={`btn ${pricing.btnColor} mt-2`}>Buy Now</a>
                 </Link>
 
@@ -117,7 +117,7 @@ const PricingOne = ({ header, ptClass }) => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default PricingOne;
+export default PricingOne

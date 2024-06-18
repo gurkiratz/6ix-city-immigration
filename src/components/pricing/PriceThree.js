@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 import Link from 'next/link'
-import {FiCheck} from 'react-icons/fi'
+import { FiCheck } from 'react-icons/fi'
 const PriceThree = () => {
   return (
     <section className="cyber-price ptb-120 bg-light">
@@ -28,46 +28,66 @@ const PriceThree = () => {
                 <div className="pricing-info mb-4">
                   <ul className="pricing-feature-list list-unstyled">
                     <li>
-                      <i className="text-success me-2"><FiCheck/></i>1 Team
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
+                      1 Team
                     </li>
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>1
-                      Installed Agent
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
+                      1 Installed Agent
                     </li>
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
                       Real-Time Feedback
                     </li>
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
                       Video Dedicated Support
                     </li>
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>1
-                      Attacked Targets Per Month
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
+                      1 Attacked Targets Per Month
                     </li>
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
                       Team Collaboration Tools
                     </li>
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>1
-                      Attacked Targets Per Month
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
+                      1 Attacked Targets Per Month
                     </li>
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
                       Automated Updated Features
                     </li>
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
                       24/7 Life time Support
                     </li>
                   </ul>
                 </div>
-                <Link
-                  href="/request-demo"
-                >
-                    <a className="btn btn-outline-primary mt-2"> Get Started Now</a>
+                <Link href="/request-call">
+                  <a className="btn btn-outline-primary mt-2">
+                    {' '}
+                    Get Started Now
+                  </a>
                 </Link>
               </div>
             </div>
@@ -82,44 +102,63 @@ const PriceThree = () => {
                 <div className="pricing-info mb-4">
                   <ul className="pricing-feature-list list-unstyled">
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>1 Team
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
+                      1 Team
                     </li>
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>1
-                      Installed Agent
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
+                      1 Installed Agent
                     </li>
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
                       Real-Time Feedback
                     </li>
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
                       Video Dedicated Support
                     </li>
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>1
-                      Attacked Targets Per Month
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
+                      1 Attacked Targets Per Month
                     </li>
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
                       Team Collaboration Tools
                     </li>
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>1
-                      Attacked Targets Per Month
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
+                      1 Attacked Targets Per Month
                     </li>
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
                       Automated Updated Features
                     </li>
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
                       24/7 Life time Support
                     </li>
                   </ul>
                 </div>
-                <Link href="/request-demo" >
-                    <a className="btn btn-primary mt-2">Get Started Now</a>
+                <Link href="/request-call">
+                  <a className="btn btn-primary mt-2">Get Started Now</a>
                 </Link>
               </div>
             </div>
@@ -134,47 +173,65 @@ const PriceThree = () => {
                 <div className="pricing-info mb-4">
                   <ul className="pricing-feature-list list-unstyled">
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>1 Team
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
+                      1 Team
                     </li>
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>1
-                      Installed Agent
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
+                      1 Installed Agent
                     </li>
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
                       Real-Time Feedback
                     </li>
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
                       Video Dedicated Support
                     </li>
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>1
-                      Attacked Targets Per Month
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
+                      1 Attacked Targets Per Month
                     </li>
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
                       Team Collaboration Tools
                     </li>
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>1
-                      Attacked Targets Per Month
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
+                      1 Attacked Targets Per Month
                     </li>
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
                       Automated Updated Features
                     </li>
                     <li>
-                     <i className="text-success me-2"><FiCheck/></i>
+                      <i className="text-success me-2">
+                        <FiCheck />
+                      </i>
                       24/7 Life time Support
                     </li>
                   </ul>
                 </div>
-                <Link
-                  href="/request-demo"
-                >
-                    <a className="btn btn-outline-primary mt-2">Get Started Now</a>
-                  
+                <Link href="/request-call">
+                  <a className="btn btn-outline-primary mt-2">
+                    Get Started Now
+                  </a>
                 </Link>
               </div>
             </div>
@@ -182,7 +239,7 @@ const PriceThree = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default PriceThree;
+export default PriceThree

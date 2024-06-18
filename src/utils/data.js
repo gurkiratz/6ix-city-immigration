@@ -527,7 +527,7 @@ const footerTemplate = [
   },
   {
     title: 'Request for Demo',
-    href: '/request-demo',
+    href: '/request-call',
   },
   {
     title: 'Coming Soon',
@@ -866,7 +866,7 @@ const navCompanyPage = [
   {
     title: 'Request for Demo',
     icon: <FaLaptopCode />,
-    href: 'request-demo',
+    href: 'request-call',
   },
   {
     title: 'User Login',

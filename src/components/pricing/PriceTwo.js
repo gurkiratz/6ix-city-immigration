@@ -1,7 +1,7 @@
-import React from "react";
-import Link from "next/link";
-import SectionTitle from "../common/SectionTitle";
-import { FaCheckCircle } from "react-icons/fa";
+import React from 'react'
+import Link from 'next/link'
+import SectionTitle from '../common/SectionTitle'
+import { FaCheckCircle } from 'react-icons/fa'
 
 const PriceTwo = () => {
   return (
@@ -120,7 +120,7 @@ const PriceTwo = () => {
                         $49 <span>/Month</span>
                       </h4>
                     </div>
-                    <Link href="/request-demo">
+                    <Link href="/request-call">
                       <a className="btn btn-primary mt-3">
                         Start 14-Days Trial
                       </a>
@@ -142,7 +142,7 @@ const PriceTwo = () => {
                         $89 <span>/Year</span>
                       </h4>
                     </div>
-                    <Link href="/request-demo">
+                    <Link href="/request-call">
                       <a className="btn btn-primary mt-3">
                         Start 14-Days Trial
                       </a>
@@ -157,7 +157,7 @@ const PriceTwo = () => {
       <div className="bg-circle rounded-circle circle-shape-1 position-absolute bg-warning left-5"></div>
       <div className="white-space-100 bg-white w-100"></div>
     </section>
-  );
-};
+  )
+}
 
-export default PriceTwo;
+export default PriceTwo

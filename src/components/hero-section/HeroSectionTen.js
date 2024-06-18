@@ -1,12 +1,12 @@
-import Image from "next/image";
-import Link from "next/link";
-import { RiArrowDownLine } from "react-icons/ri";
-import React, { useState } from "react";
-import { IoPlayCircleOutline } from "react-icons/io5";
-import ModalVideo from "react-modal-video";
+import Image from 'next/image'
+import Link from 'next/link'
+import { RiArrowDownLine } from 'react-icons/ri'
+import React, { useState } from 'react'
+import { IoPlayCircleOutline } from 'react-icons/io5'
+import ModalVideo from 'react-modal-video'
 
 const HeroSectionTen = () => {
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(false)
   return (
     <section
       className="hero-section text-white hero-ten"
@@ -32,7 +32,7 @@ const HeroSectionTen = () => {
                 veniam consequat sunt nostrud amet.
               </p>
               <div className="action-btns mt-5 align-items-center d-block d-sm-flex d-lg-flex d-md-flex">
-                <Link href="/request-demo">
+                <Link href="/request-call">
                   <a className="btn btn-primary">Discover More</a>
                 </Link>
                 <Link href="/">
@@ -68,7 +68,7 @@ const HeroSectionTen = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HeroSectionTen;
+export default HeroSectionTen

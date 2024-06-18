@@ -1,15 +1,15 @@
-import Link from "next/link";
-import React, { useState } from "react";
-import { IoPlayCircleOutline } from "react-icons/io5";
-import ModalVideo from "react-modal-video";
+import Link from 'next/link'
+import React, { useState } from 'react'
+import { IoPlayCircleOutline } from 'react-icons/io5'
+import ModalVideo from 'react-modal-video'
 
 export default function HeroThirteen() {
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(false)
 
   return (
     <section
       className="hero-payment-gateway"
-      style={{ backgroundImage: "/pay-h.jpg" }}
+      style={{ backgroundImage: '/pay-h.jpg' }}
     >
       <div className="container">
         <ModalVideo
@@ -30,7 +30,7 @@ export default function HeroThirteen() {
                 funds, view transactions wherever happy clients all around.
               </p>
               <div className="action-btns mt-5 align-items-center d-block d-sm-flex d-lg-flex d-md-flex">
-                <Link href="/request-demo">
+                <Link href="/request-call">
                   <a className="btn-gradient-sqr ">Download Now</a>
                 </Link>
                 <div className="ms-2">
@@ -60,5 +60,5 @@ export default function HeroThirteen() {
         </div>
       </div>
     </section>
-  );
+  )
 }

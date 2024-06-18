@@ -1,6 +1,6 @@
-import React from "react";
-import Link from "next/link";
-import { FiCheckCircle } from "react-icons/fi";
+import React from 'react'
+import Link from 'next/link'
+import { FiCheckCircle } from 'react-icons/fi'
 
 export default function EventPrice() {
   return (
@@ -58,7 +58,7 @@ export default function EventPrice() {
                   Afternoon snacks
                 </li>
               </ul>
-              <Link href="/request-demo">
+              <Link href="/request-call">
                 <a className="ev-price-btn mt-4">Purchase Now</a>
               </Link>
               <ul className="list-unstyled ev-price-dot mb-0">
@@ -114,7 +114,7 @@ export default function EventPrice() {
                   Afternoon snacks
                 </li>
               </ul>
-              <Link href="/request-demo">
+              <Link href="/request-call">
                 <a className="ev-price-btn mt-4">Purchase Now</a>
               </Link>
               <ul className="list-unstyled ev-price-dot mb-0">
@@ -170,7 +170,7 @@ export default function EventPrice() {
                   Afternoon snacks
                 </li>
               </ul>
-              <Link href="/request-demo">
+              <Link href="/request-call">
                 <a className="ev-price-btn mt-4">Purchase Now</a>
               </Link>
               <ul className="list-unstyled ev-price-dot mb-0">
@@ -199,5 +199,5 @@ export default function EventPrice() {
         </p>
       </div>
     </section>
-  );
+  )
 }

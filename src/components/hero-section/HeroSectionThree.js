@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import Link from "next/link";
-import HeroTitle from "../common/HeroTitle";
+import React from 'react'
+import Link from 'next/link'
+import HeroTitle from '../common/HeroTitle'
 
 const HeroSectionThree = () => {
   return (
@@ -22,7 +22,7 @@ const HeroSectionThree = () => {
                   cross-media expertise."
               />
               <div className="action-btns text-center pt-4">
-                <Link href="/request-demo">
+                <Link href="/request-call">
                   <a className="btn btn-primary me-3"> Start a Free Trial</a>
                 </Link>
                 <Link href="/contact-us">
@@ -60,7 +60,7 @@ const HeroSectionThree = () => {
       </div>
       <div className="bg-dark position-absolute bottom-0 h-25 bottom-0 left-0 right-0 z--1 py-5"></div>
     </section>
-  );
-};
+  )
+}
 
-export default HeroSectionThree;
+export default HeroSectionThree

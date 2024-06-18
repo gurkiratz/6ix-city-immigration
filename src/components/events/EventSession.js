@@ -1,6 +1,6 @@
-import React from "react";
-import Link from "next/link";
-import { FiArrowRight, FiMapPin, FiClock } from "react-icons/fi";
+import React from 'react'
+import Link from 'next/link'
+import { FiArrowRight, FiMapPin, FiClock } from 'react-icons/fi'
 
 export default function EventSession() {
   return (
@@ -718,7 +718,7 @@ export default function EventSession() {
             </div>
           </div>
           <div className="text-center mt-3">
-            <Link href="/request-demo">
+            <Link href="/request-call">
               <a className="btn btn-primary bg-dark-blue"> Download Brochure</a>
             </Link>
           </div>
@@ -730,5 +730,5 @@ export default function EventSession() {
         </div>
       </div>
     </section>
-  );
+  )
 }

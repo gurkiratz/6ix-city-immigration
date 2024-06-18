@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import HeroTitle from '../common/HeroTitle';
+import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import HeroTitle from '../common/HeroTitle'
 
 const HeroSectionSix = () => {
   return (
@@ -22,7 +22,7 @@ const HeroSectionSix = () => {
                 desc="Proactively coordinate quality quality vectors vis-a-vis supply chains engage client-centric web services."
               />
               <div className="action-btns mt-5">
-                <Link href="/request-demo">
+                <Link href="/request-call">
                   <a className="btn btn-primary me-3">Request Demo</a>
                 </Link>
                 <Link href="/about-us">
@@ -79,7 +79,7 @@ const HeroSectionSix = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HeroSectionSix;
+export default HeroSectionSix

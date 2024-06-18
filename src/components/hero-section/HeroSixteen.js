@@ -1,6 +1,6 @@
-import Link from "next/link";
-import React from "react";
-import { FaHeart, FaPlay } from "react-icons/fa";
+import Link from 'next/link'
+import React from 'react'
+import { FaHeart, FaPlay } from 'react-icons/fa'
 
 const HeroSixteen = () => {
   return (
@@ -51,7 +51,7 @@ const HeroSixteen = () => {
                   White Board sustainable products with premier total linkage
                   Energistically Monetize.
                 </p>
-                <Link href="/request-demo">
+                <Link href="/request-call">
                   <a className="ins-btn ins-primary-btn ins-primary-btn-shadow">
                     Let&apos;s Get Started
                   </a>
@@ -67,7 +67,7 @@ const HeroSixteen = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HeroSixteen;
+export default HeroSixteen

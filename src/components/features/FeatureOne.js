@@ -1,10 +1,10 @@
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
+import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 
-import SectionTitle from "../common/SectionTitle";
-import { RiStackLine } from "react-icons/ri";
-import { BsCodeSlash, BsShieldCheck } from "react-icons/bs";
+import SectionTitle from '../common/SectionTitle'
+import { RiStackLine } from 'react-icons/ri'
+import { BsCodeSlash, BsShieldCheck } from 'react-icons/bs'
 
 const FeatureOne = () => {
   return (
@@ -31,7 +31,7 @@ const FeatureOne = () => {
                   <h3 className="h5">Good Performance</h3>
                   <p>
                     Appropriately grow competitive leadership rather than
-                    strategic technically sound processes without state.{" "}
+                    strategic technically sound processes without state.{' '}
                   </p>
                 </div>
               </div>
@@ -45,7 +45,7 @@ const FeatureOne = () => {
                   <h3 className="h5">Highly Secure</h3>
                   <p>
                     Appropriately grow competitive leadership rather than
-                    strategic technically sound processes without state.{" "}
+                    strategic technically sound processes without state.{' '}
                   </p>
                 </div>
               </div>
@@ -59,7 +59,7 @@ const FeatureOne = () => {
                   <h3 className="h5">Fast Development</h3>
                   <p>
                     Appropriately grow competitive leadership rather than
-                    strategic technically sound processes without state.{" "}
+                    strategic technically sound processes without state.{' '}
                   </p>
                 </div>
               </div>
@@ -72,13 +72,13 @@ const FeatureOne = () => {
                   <h5>Utilize your software data</h5>
                   <p>
                     Progressively reinvent models and niche revolutionary
-                    benefits for integrated niches.{" "}
+                    benefits for integrated niches.{' '}
                   </p>
                 </div>
                 <div className="action-btns mt-auto">
-                  <Link href="/request-demo">
+                  <Link href="/request-call">
                     <a className="btn btn-outline-primary btn-sm">
-                      {" "}
+                      {' '}
                       Start For Free
                     </a>
                   </Link>
@@ -100,7 +100,7 @@ const FeatureOne = () => {
                   <h5>Get real time updated anytime</h5>
                   <p>
                     Progressively reinvent models and niche revolutionary
-                    benefits for integrated niches.{" "}
+                    benefits for integrated niches.{' '}
                   </p>
                 </div>
                 <div className="action-btns mt-auto">
@@ -126,7 +126,7 @@ const FeatureOne = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default FeatureOne;
+export default FeatureOne

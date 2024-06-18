@@ -1,9 +1,9 @@
-import React from "react";
-import Link from 'next/link';
-import Image from 'next/image';
+import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 
-import VideoModal from '../common/VideoModal';
-import DarkModal from "@components/common/DarkModal";
+import VideoModal from '../common/VideoModal'
+import DarkModal from '@components/common/DarkModal'
 
 const HeroSectionNine = () => {
   return (
@@ -25,10 +25,10 @@ const HeroSectionNine = () => {
                 chains. Quickly engage client-centric web services.
               </p>
               <div className="action-btn mt-5 align-items-center d-block d-sm-flex d-lg-flex d-md-flex">
-                <Link href="/request-demo" >
-                  <a  className="btn btn-primary me-3">Request For Demo</a>
+                <Link href="/request-call">
+                  <a className="btn btn-primary me-3">Request For Demo</a>
                 </Link>
-               <DarkModal className="true"/>
+                <DarkModal className="true" />
               </div>
             </div>
           </div>
@@ -42,21 +42,22 @@ const HeroSectionNine = () => {
                 height={620}
               />
               <div className="dots">
-                  <div className="dot-1">
+                <div className="dot-1">
                   <Image
-                  src="/banner_dot.png"
-                  alt="dot"
-                  width={96}
-                  height={91}
+                    src="/banner_dot.png"
+                    alt="dot"
+                    width={96}
+                    height={91}
                   />
-                  </div>
+                </div>
                 <div className="dot-2">
-                   <Image
-                  src="/banner_dot.png"
-                  alt="dot"
-                  width={96}
-                  height={91}
-                /></div>
+                  <Image
+                    src="/banner_dot.png"
+                    alt="dot"
+                    width={96}
+                    height={91}
+                  />
+                </div>
               </div>
               <div className="bubble">
                 <span className="bubble-1"></span>
@@ -67,7 +68,7 @@ const HeroSectionNine = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HeroSectionNine;
+export default HeroSectionNine

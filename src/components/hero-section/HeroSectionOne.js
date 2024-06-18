@@ -32,7 +32,7 @@ const HeroSectionOne = () => {
                 Permit, and more.
               </p>
               <div className="action-btns mt-5 align-items-center flex d-sm-flex d-lg-flex d-md-flex">
-                <Link href="/request-demo">
+                <Link href="/request-call">
                   <a className="btn btn-primary me-3">Request a Free Call</a>
                 </Link>
                 <div onClick={() => scrolltoHash('services')}>

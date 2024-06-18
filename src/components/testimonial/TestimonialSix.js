@@ -1,10 +1,10 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination } from "swiper/core";
-import Image from "next/image";
-import Link from 'next/link';
+import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import SwiperCore, { Pagination } from 'swiper/core'
+import Image from 'next/image'
+import Link from 'next/link'
 
-SwiperCore.use([Pagination]);
+SwiperCore.use([Pagination])
 
 const TestimonialSix = () => {
   const swiperOption = {
@@ -12,9 +12,9 @@ const TestimonialSix = () => {
     speed: 700,
     pagination: {
       clickable: true,
-      el: ".swiper-pagination",
+      el: '.swiper-pagination',
     },
-    slidespergroup: 2, 
+    slidespergroup: 2,
     loop: true,
     breakpoints: {
       320: {
@@ -28,7 +28,7 @@ const TestimonialSix = () => {
         slidesperview: 1,
       },
     },
-  };
+  }
   return (
     <section
       className="cyber-testimonial pt-100"
@@ -47,8 +47,8 @@ const TestimonialSix = () => {
                 site pay for the hosting and bandwidth bill
               </p>
               <div className="action-btn mt-5">
-                <Link href="/request-demo" >
-                    <a className="btn btn-primary me-3">More Testimonial</a>
+                <Link href="/request-call">
+                  <a className="btn btn-primary me-3">More Testimonial</a>
                 </Link>
               </div>
             </div>
@@ -59,7 +59,12 @@ const TestimonialSix = () => {
                 <SwiperSlide {...swiperOption}>
                   <div className="cyber-single-testimonial">
                     <div className="cyber-t-q mb-4">
-                    <Image src="/quoate.png" alt="quoate" width={54} height={54}/>
+                      <Image
+                        src="/quoate.png"
+                        alt="quoate"
+                        width={54}
+                        height={54}
+                      />
                     </div>
                     <p className="mb-30">
                       If you use this site regularly and would like to help keep
@@ -87,7 +92,12 @@ const TestimonialSix = () => {
                 <SwiperSlide>
                   <div className="cyber-single-testimonial">
                     <div className="cyber-t-q mb-4">
-                    <Image src="/quoate.png" alt="quoate" width={54} height={54}/>
+                      <Image
+                        src="/quoate.png"
+                        alt="quoate"
+                        width={54}
+                        height={54}
+                      />
                     </div>
                     <p className="mb-30">
                       If you use this site regularly and would like to help keep
@@ -113,7 +123,12 @@ const TestimonialSix = () => {
                 <SwiperSlide>
                   <div className="cyber-single-testimonial">
                     <div className="cyber-t-q mb-4">
-                      <Image src="/quoate.png" alt="quoate" width={54} height={54}/>
+                      <Image
+                        src="/quoate.png"
+                        alt="quoate"
+                        width={54}
+                        height={54}
+                      />
                     </div>
                     <p className="mb-30">
                       If you use this site regularly and would like to help keep
@@ -145,7 +160,7 @@ const TestimonialSix = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default TestimonialSix;
+export default TestimonialSix

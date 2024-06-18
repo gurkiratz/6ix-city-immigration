@@ -1,15 +1,13 @@
-
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useState } from 'react';
-import { IoPlayCircleOutline } from 'react-icons/io5';
-import ModalVideo from 'react-modal-video';
+import React, { useState } from 'react'
+import { IoPlayCircleOutline } from 'react-icons/io5'
+import ModalVideo from 'react-modal-video'
 
 const HeroSectionEleven = () => {
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(false)
   return (
     <section className="hero-eleven bg-dark-black pt-120">
-      
       <ModalVideo
         channel="youtube"
         isOpen={isOpen}
@@ -25,23 +23,27 @@ const HeroSectionEleven = () => {
               </h1>
               <p className="lead text-white">
                 You might wonder why a designer would choose to use Morem text
-                paragraphs in English or their native language architect interactive.
+                paragraphs in English or their native language architect
+                interactive.
               </p>
               <div className="action-btns mt-5 align-items-center d-block d-sm-flex d-lg-flex d-md-flex">
-                <Link href="/request-demo" >
-                 <a className="btn rounded-pill btn-primary me-3"> Get Started</a>
+                <Link href="/request-call">
+                  <a className="btn rounded-pill btn-primary me-3">
+                    {' '}
+                    Get Started
+                  </a>
                 </Link>
                 <div>
-                    <Link href="/#">
-                      <a
-                        onClick={() => setOpen(true)}
-                        type="button"
-                        className="text-decoration-none d-inline-flex align-items-center watch-now-btn"
-                      >
-                        <IoPlayCircleOutline className="me-2" /> Watch Demo
-                      </a>
-                    </Link>
-                  </div>
+                  <Link href="/#">
+                    <a
+                      onClick={() => setOpen(true)}
+                      type="button"
+                      className="text-decoration-none d-inline-flex align-items-center watch-now-btn"
+                    >
+                      <IoPlayCircleOutline className="me-2" /> Watch Demo
+                    </a>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -49,16 +51,36 @@ const HeroSectionEleven = () => {
             <div className="crypto-hero-img pt-80">
               <ul className="currency-icon list-unstyled">
                 <li>
-                  <Image src="/currency1.svg" alt="icon" width={59} height={59} />
+                  <Image
+                    src="/currency1.svg"
+                    alt="icon"
+                    width={59}
+                    height={59}
+                  />
                 </li>
                 <li>
-                  <Image src="/currency2.svg" alt="icon" width={28} height={46}/>
+                  <Image
+                    src="/currency2.svg"
+                    alt="icon"
+                    width={28}
+                    height={46}
+                  />
                 </li>
                 <li>
-                  <Image src="/currency3.svg" alt="icon" width={42} height={26}/>
+                  <Image
+                    src="/currency3.svg"
+                    alt="icon"
+                    width={42}
+                    height={26}
+                  />
                 </li>
                 <li>
-                  <Image src="/currency4.svg" alt="icon" width={31} height={31}/>
+                  <Image
+                    src="/currency4.svg"
+                    alt="icon"
+                    width={31}
+                    height={31}
+                  />
                 </li>
               </ul>
               <Image
