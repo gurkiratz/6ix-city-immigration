@@ -88,6 +88,11 @@ const Navbar = ({ navDark, insurance, classOption }) => {
                 </Link>
               </li>
               <li>
+                <Link href="/#testimonials">
+                  <a className="nav-link">Testimonials</a>
+                </Link>
+              </li>
+              <li>
                 <Link href="/about-us">
                   <a className="nav-link">About</a>
                 </Link>
