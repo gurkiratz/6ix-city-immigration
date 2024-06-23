@@ -9,6 +9,10 @@ const Blockquote = () => {
         <p className="h6 mb-3">How 6ix City Immigration Can Help You:</p>
         <ul className="content-list list-unstyled">
           <li>
+            <b>Expert Knowledge:</b> Our consultants are well-versed in Canadian
+            immigration laws and policies.
+          </li>
+          <li>
             <b>Application Support:</b> We guide you through the application
             process, including medical exams and insurance documentation.
           </li>
@@ -18,8 +22,8 @@ const Blockquote = () => {
             of invitation (if applicable).
           </li>
           <li>
-            <b>Interview Preparation:</b> If required, we prepare you for the
-            visa interview process.
+            <b>Proven Track Record:</b> We have a high success rate in securing
+            visas and positive LMIAs for our clients.
           </li>
         </ul>
         <i className="fas fa-quote-right ms-2 text-primary"></i>

@@ -1,13 +1,12 @@
-
-.bg-light{
+.bg-light {
   background-color: $gray-200 !important;
 }
 
 .bg-primary-soft {
-  background-color: rgba($primary, .2)
+  background-color: rgba($primary, 0.2);
 }
 .bg-primary-light {
-  background-color: rgba($primary, .75)
+  background-color: rgba($primary, 0.75);
 }
 .bg-primary {
   background-color: $primary !important;
@@ -17,10 +16,10 @@
 }
 
 .bg-info-soft {
-  background-color: rgba($info, .2)
+  background-color: rgba($info, 0.2);
 }
 .bg-info-light {
-  background-color: rgba($info, .75)
+  background-color: rgba($info, 0.75);
 }
 .bg-info {
   background-color: $info !important;
@@ -30,10 +29,10 @@
 }
 
 .bg-success-soft {
-  background-color: rgba($success, .2)
+  background-color: rgba($success, 0.2);
 }
 .bg-success-light {
-  background-color: rgba($success, .75)
+  background-color: rgba($success, 0.75);
 }
 .bg-success {
   background-color: $success !important;
@@ -43,10 +42,10 @@
 }
 
 .bg-warning-soft {
-  background-color: rgba($warning, .2)
+  background-color: rgba($warning, 0.2);
 }
 .bg-warning-light {
-  background-color: rgba($warning, .75)
+  background-color: rgba($warning, 0.75);
 }
 .bg-warning {
   background-color: $warning !important;
@@ -56,10 +55,10 @@
 }
 
 .bg-danger-soft {
-  background-color: rgba($danger, .2)
+  background-color: rgba($danger, 0.2);
 }
 .bg-danger-light {
-  background-color: rgba($danger, .75)
+  background-color: rgba($danger, 0.75);
 }
 .bg-danger {
   background-color: $danger !important;
@@ -69,7 +68,7 @@
 }
 
 .bg-dark-soft {
-  background-color: rgba($secondary, .5)
+  background-color: rgba($secondary, 0.5);
 }
 .bg-dark-light {
   background-color: $gray-700;
@@ -86,50 +85,82 @@
 }
 
 .bg-secondary-light {
-  background-color: rgba($secondary, .2);
+  background-color: rgba($secondary, 0.2);
 }
 .bg-secondary {
   background-color: $secondary !important;
 }
 .bg-secondary-dark {
-  background-color:darken($secondary, 10%);
+  background-color: darken($secondary, 10%);
 }
 .bg-custom-light {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.bg-black, .bg-dark-black {
+.bg-black,
+.bg-dark-black {
   background-color: $black;
 }
 
-.bg-soft-black{
+.bg-soft-black {
   background-color: $github;
 }
 /*gradient bg*/
 .primary-bg-gradient {
-  background: linear-gradient( 90deg, $dark, $primary ) !important;
+  background: linear-gradient(90deg, $dark, $primary) !important;
 }
 
 .info-bg-gradient {
-  background: linear-gradient( 90deg, $primary, $info ) !important;
+  background: linear-gradient(90deg, $primary, $info) !important;
 }
 
 .success-bg-gradient {
-  background: linear-gradient( 90deg, $success, darken($success, 15%) ) !important;
+  background: linear-gradient(
+    90deg,
+    $success,
+    darken($success, 15%)
+  ) !important;
 }
 .warning-bg-gradient {
-  background: linear-gradient( 90deg, $warning, darken($warning, 15%) ) !important;
+  background: linear-gradient(
+    90deg,
+    $warning,
+    darken($warning, 15%)
+  ) !important;
 }
 
 .danger-bg-gradient {
-  background: linear-gradient( 90deg, $danger, darken($danger, 15%) ) !important;
+  background: linear-gradient(90deg, $danger, darken($danger, 15%)) !important;
 }
 
 .dark-bg-gradient {
-  background: linear-gradient( 90deg, $primary,  $dark ) !important;
+  background: linear-gradient(90deg, $primary, $dark) !important;
 }
 .secondary-bg-gradient {
-  background: linear-gradient( 90deg, $secondary, darken($secondary, 15%) ) !important;
+  background: linear-gradient(
+    90deg,
+    $secondary,
+    darken($secondary, 15%)
+  ) !important;
 }
 .bg-gradient {
-  background: linear-gradient(90deg, $gray-700, darken($primary, 25%)) !important;
+  background: linear-gradient(
+    90deg,
+    $gray-700,
+    darken($primary, 25%)
+  ) !important;
+}
+
+.section-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* Black layer with 50% opacity */
+  z-index: 1; /* Ensure it's above the background image but below the text */
+}
+
+.section-overlay {
+  position: relative; /* Required for the absolute positioning of the pseudo-element */
 }

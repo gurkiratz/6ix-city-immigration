@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
-import Link from 'next/link';
+import React from 'react'
+import Link from 'next/link'
 
 const PageHeader = ({ title, desc, integration, blogtags }) => {
   return (
@@ -9,7 +9,7 @@ const PageHeader = ({ title, desc, integration, blogtags }) => {
         <section
           className="page-header position-relative overflow-hidden ptb-120 bg-dark"
           style={{
-            background: "url('/page-header-bg.svg')no-repeat bottom left",
+            background: "url('/service/labor-market.jpg')no-repeat bottom left",
           }}
         >
           <div className="container">
@@ -45,9 +45,13 @@ const PageHeader = ({ title, desc, integration, blogtags }) => {
         </section>
       ) : (
         <section
-          className="page-header position-relative overflow-hidden ptb-120 bg-dark"
+          className="page-header section-overlay position-relative overflow-hidden ptb-120 bg-dark"
           style={{
-            background: "url('/page-header-bg.svg')no-repeat bottom left",
+            background:
+              "url('/service/labor-market.jpg')no-repeat center center",
+            backgroundSize: 'cover',
+            overflow: 'hidden',
+            zIndex: -1,
           }}
         >
           <div className="container">
@@ -56,7 +60,10 @@ const PageHeader = ({ title, desc, integration, blogtags }) => {
                 blogtags ? 'justify-content-center text-center' : ''
               }`}
             >
-              <div className="col-lg-8 col-md-12">
+              <div
+                className="col-lg-8 col-md-12"
+                style={{ position: 'relative', zIndex: 2 }}
+              >
                 <h1 className="display-5 fw-bold">{title}</h1>
                 <p className="lead">{desc}</p>
               </div>
@@ -126,7 +133,7 @@ const PageHeader = ({ title, desc, integration, blogtags }) => {
         </section>
       )}
     </>
-  );
-};
+  )
+}
 
-export default PageHeader;
+export default PageHeader

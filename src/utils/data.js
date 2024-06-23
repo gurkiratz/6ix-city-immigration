@@ -758,7 +758,7 @@ const servicesData = [
     serviceDesc: 'PR Support & Dual Intent',
     icon: <FaPassport />,
     component: FaPassport,
-    href: '/',
+    href: '/services/labour-market-impact-assessment',
     color: 'warning',
   },
   {
