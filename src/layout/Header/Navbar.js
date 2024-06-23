@@ -105,6 +105,25 @@ const Navbar = ({ navDark, insurance, classOption }) => {
             </ul>
           </div>
 
+          <div className="navbar-brand d-none d-md-flex align-items-center mb-md-0 text-decoration-none">
+            {scroll > headerTop || !navDark ? (
+              <Image
+                width={175}
+                height={60}
+                src="/rcic-logo.svg"
+                alt="logo"
+                className="img-fluid logo-color"
+              />
+            ) : (
+              <Image
+                width={200}
+                height={80}
+                src="/rcic-logo-dark.svg"
+                alt="logo"
+                className="img-fluid logo-white"
+              />
+            )}
+          </div>
           <div className="action-btns text-end me-5 me-lg-0 d-none d-md-block d-lg-block">
             <Link href="contact-us">
               <a
