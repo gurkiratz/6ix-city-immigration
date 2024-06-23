@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { BsArrowRight } from 'react-icons/bs'
 import { servicesData } from '@utils/data'
 import SectionTitle from '../common/SectionTitle'
+import { CgAirplane } from 'react-icons/cg'
 
 const ServiceOne = ({ bgDark }) => {
   const renderedServices = servicesData.map((service) => {
@@ -64,7 +65,7 @@ const ServiceOne = ({ bgDark }) => {
               >
                 <div className="icon-box d-inline-block rounded-circle bg-primary-soft mb-32">
                   <span className="fal">
-                    <BsArrowRight className="h4 text-primary" />
+                    <CgAirplane className="h4 text-primary" />
                   </span>
                 </div>
                 <div className="feature-content">
