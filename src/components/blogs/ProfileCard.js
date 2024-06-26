@@ -19,8 +19,8 @@ const ProfileCard = () => {
         <span className="small">RCIC Consultant</span>
       </div>
       <p>
-        Uniquely communicate open-source technology after value-added ideas.
-        Professionally engage efficient channels without B2C functionalities.
+        Experienced RCIC Consultant dedicated to making your Canadian
+        immigration journey seamless and successful.
       </p>
       <ul className="list-unstyled author-social-list list-inline mt-3 mb-0">
         <li className="list-inline-item">

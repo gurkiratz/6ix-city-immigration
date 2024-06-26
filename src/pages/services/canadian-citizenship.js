@@ -1,10 +1,10 @@
 import React from 'react'
 import Layout from '@layout/Layout'
-import FooterTwo from '@layout/Footer/FooterTwo'
 import Navbar from '@layout/Header/Navbar'
 import LatestBlog from '@components/blogs/LatestBlog'
 import PageHeader from '@components/common/PageHeader'
-import ExpressEntry from '@components/blogs/ExpressEntry'
+import CanadianCitizenship from '@components/blogs/CanadianCitizenship'
+import FooterTwo from '@layout/Footer/FooterTwo'
 import QuickSupport from '@components/support/QuickSupport'
 
 const BlogSingle = () => {
@@ -12,10 +12,10 @@ const BlogSingle = () => {
     <Layout title="Blog Single" desc="This is blog single page">
       <Navbar classOption="navbar-dark" />
       <PageHeader
-        title="Express Entry: Your Pathway to Permanent Residency in Canada"
-        image={'/service/express-entry.jpg'}
+        title="Your Path to Canadian Citizenship: Expert Guidance and Support"
+        image="/service/canada-citizen.jpg"
       />
-      <ExpressEntry />
+      <CanadianCitizenship />
       <LatestBlog />
       <QuickSupport />
       <FooterTwo />

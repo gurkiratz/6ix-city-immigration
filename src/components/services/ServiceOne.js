@@ -56,7 +56,7 @@ const ServiceOne = ({ bgDark }) => {
 
             <div className="feature-grid">
               {renderedServices}
-              <div
+              {/* <div
                 className={`shadow-sm highlight-card rounded-custom p-5 ${
                   bgDark
                     ? 'bg-custom-light promo-border-hover border border-2 border-light text-white'
@@ -131,7 +131,7 @@ const ServiceOne = ({ bgDark }) => {
                     </i>
                   </a>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

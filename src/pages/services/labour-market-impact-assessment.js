@@ -14,6 +14,7 @@ const BlogSingle = () => {
       <PageHeader
         title="Understanding the Labour Market Impact Assessment (LMIA)
 "
+        image="/service/labor-market.jpg"
       />
       <LMIA />
       <LatestBlog />

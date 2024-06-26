@@ -2,7 +2,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-const PageHeader = ({ title, desc, integration, blogtags }) => {
+const PageHeader = ({ title, image, desc, integration, blogtags }) => {
   return (
     <>
       {integration ? (
@@ -47,8 +47,9 @@ const PageHeader = ({ title, desc, integration, blogtags }) => {
         <section
           className="page-header section-overlay position-relative overflow-hidden ptb-120 bg-dark"
           style={{
-            background:
-              "url('/service/labor-market.jpg')no-repeat center center",
+            background: `url('${
+              image || '/page-header-bg.svg'
+            }')no-repeat center center`,
             backgroundSize: 'cover',
             overflow: 'hidden',
             zIndex: -1,

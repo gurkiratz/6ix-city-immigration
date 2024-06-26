@@ -2,6 +2,7 @@ import React from 'react'
 
 import ProfileCard from './ProfileCard'
 import Blockquote from './Blockquote'
+import Image from 'next/image'
 
 const BlogSingleFeature = () => {
   return (
@@ -20,6 +21,13 @@ const BlogSingleFeature = () => {
                   complexities of LMIA applications, providing comprehensive
                   support to both employers and prospective employees.
                 </p>
+                <Image
+                  width={500}
+                  height={350}
+                  src="/service/lmia.jpg"
+                  className="img-fluid mt-4 rounded-custom"
+                  alt="apply"
+                />
 
                 <div className="blog-details-info mt-5">
                   <h3 className="h4">What is LMIA?</h3>

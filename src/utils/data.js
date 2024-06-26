@@ -749,7 +749,7 @@ const servicesData = [
     serviceDesc: 'Visitor / Super Visa',
     icon: <CgAirplane />,
     component: CgAirplane,
-    href: '/',
+    href: '/services/visitor-super-visa',
     color: 'info',
   },
   {
@@ -767,7 +767,7 @@ const servicesData = [
     serviceDesc: 'Initial Permit or Permit Extension',
     icon: <HiAcademicCap />,
     component: HiAcademicCap,
-    href: '/',
+    href: '/services/study-permit',
     color: 'info',
   },
   {
@@ -777,7 +777,7 @@ const servicesData = [
       'PGWP, Spousal Work Permit, Co-op Work Permit, BOWP, LMIA Based Work Permit',
     icon: <GrUserWorker />,
     component: GrUserWorker,
-    href: '/',
+    href: '/services/work-permit',
     color: 'danger',
   },
   {
@@ -795,7 +795,7 @@ const servicesData = [
     serviceDesc: 'Canadian Citizenship',
     icon: <FaPersonCircleCheck />,
     component: FaPersonCircleCheck,
-    href: '/',
+    href: '/services/canadian-citizenship',
     color: 'success',
   },
   {

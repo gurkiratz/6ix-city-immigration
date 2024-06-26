@@ -14,6 +14,7 @@ const BlogSingle = () => {
       <PageHeader
         title="Family Class Sponsorship: Reuniting Families in Canada
 "
+        image={'/service/family.jpg'}
       />
       <FamilyClassSponsorship />
       <LatestBlog />
