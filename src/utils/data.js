@@ -1269,6 +1269,7 @@ const blogFeatureData = [
 const blogServicesData = [
   {
     image: '/service/family.jpg',
+    href: '/services/family-class-sponsorship',
     type: 'Design',
     header: 'Family Class Sponsorship',
     info: 'Family is at the heart of every Canadian community. The Family Class Sponsorship program allows Canadian citizens and permanent residents to reunite with their loved ones by sponsoring them to come to Canada as permanent residents.',
@@ -1279,6 +1280,7 @@ const blogServicesData = [
   },
   {
     image: '/service/labor-market.jpg',
+    href: '/services/labour-market-impact-assessment',
     type: 'Customer',
     header: 'LMIA',
     info: 'Labour Market Impact Assessment (LMIA) is a crucial process for Canadian employers looking to hire foreign workers. It ensures that hiring a foreign worker will not negatively affect the Canadian labour market.',
@@ -1289,6 +1291,7 @@ const blogServicesData = [
   },
   {
     image: '/service/work.jpg',
+    href: '/services/work-permit',
     type: 'Development',
     header: 'Work Permit',
     info: 'Canada offers abundant opportunities for skilled workers from around the world. Whether you are looking to gain international work experience, support your family, or explore new career prospects, obtaining a Work Permit is a crucial step.',
