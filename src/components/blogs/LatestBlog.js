@@ -29,7 +29,7 @@ const LatestBlog = () => {
           {blogServicesData.slice(0, 3).map((blog, i) => (
             <div key={i + 1} className="col-lg-4 col-md-6">
               <div className="single-article rounded-custom mb-4 mb-lg-0">
-                <Link href="/blog-single">
+                <Link href={blog.href || '/'}>
                   <a className="article-img">
                     <Image
                       width={414}
