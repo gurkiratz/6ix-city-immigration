@@ -9,6 +9,7 @@ import {
   FaPhone,
 } from 'react-icons/fa'
 import { IoMail } from 'react-icons/io5'
+import { servicesData } from '@utils/data'
 
 const FooterTwo = () => {
   return (
@@ -62,47 +63,16 @@ const FooterTwo = () => {
                   <div className="">
                     <h3 className="h5 mb-4 text-white">Our Services</h3>
                     <ul className="list-unstyled footer-nav-list mb-lg-0">
-                      <li>
-                        <Link
-                          className="text-decoration-none"
-                          href="/services/express-entry"
-                        >
-                          Express Entry
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="text-decoration-none"
-                          href="/services/family-class-sponsorship"
-                        >
-                          Family Class Sponsorship
-                        </Link>
-                      </li>
-                      <li>
-                        <Link className="text-decoration-none" href="/">
-                          Visitor/Super Visa
-                        </Link>
-                      </li>
-                      <li>
-                        <Link className="text-decoration-none" href="/">
-                          LMIA
-                        </Link>
-                      </li>
-                      <li>
-                        <Link className="text-decoration-none" href="/">
-                          Study Permit
-                        </Link>
-                      </li>
-                      <li>
-                        <Link className="text-decoration-none" href="/">
-                          Work Permit
-                        </Link>
-                      </li>
-                      <li>
-                        <Link className="text-decoration-none" href="/">
-                          Citizenship
-                        </Link>
-                      </li>
+                      {servicesData.map((service, index) => (
+                        <li key={index}>
+                          <Link
+                            className="text-decoration-none"
+                            href={service.href}
+                          >
+                            {service.title}
+                          </Link>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
