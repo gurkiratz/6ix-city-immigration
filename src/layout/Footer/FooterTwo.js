@@ -133,7 +133,11 @@ const FooterTwo = () => {
             <div className="col-md-7 col-lg-7">
               <div className="copyright-text">
                 <p className="mb-lg-0 mb-md-0">
-                  &copy; 2024 6ixCityImmigration, Inc., All Rights Reserved.
+                  &copy; 2024 6ixCityImmigration, Inc., All Rights Reserved.{' '}
+                  <span className="">
+                    Designed by{' '}
+                    <Link href={'https://devkirat.me/'}>Gurkirat Singh</Link>
+                  </span>
                 </p>
               </div>
             </div>
