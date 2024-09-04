@@ -136,7 +136,7 @@ const FooterTwo = () => {
                   &copy; 2024 6ixCityImmigration, Inc., All Rights Reserved.{' '}
                   <span className="">
                     Designed by{' '}
-                    <Link href={'https://devkirat.me/'}>Gurkirat Singh</Link>
+                    <Link href={'https://gurkiratsingh.co/'}>Gurkirat Singh</Link>
                   </span>
                 </p>
               </div>
