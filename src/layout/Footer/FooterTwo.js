@@ -143,7 +143,8 @@ const FooterTwo = () => {
             <div className="col-md-7 col-lg-7">
               <div className="copyright-text">
                 <p className="mb-lg-0 mb-md-0">
-                  &copy; 2024 6ixCityImmigration, Inc., All Rights Reserved.{' '}
+                  &copy; {new Date().getFullYear()} 6ixCityImmigration, Inc.,
+                  All Rights Reserved. Designed By{' '}
                   <span className="">
                     Designed by{' '}
                     <Link href={'https://gurkiratz.co/'}>Gurkirat Singh</Link>

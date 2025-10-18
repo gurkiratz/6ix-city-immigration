@@ -156,8 +156,8 @@ const Footer = ({ footerLight, style, footerGradient }) => {
               <div className="col-md-7 col-lg-7">
                 <div className="copyright-text">
                   <p className="mb-lg-0 mb-md-0">
-                    &copy; 2024 6ixCityImmigration, Inc., All Rights Reserved.
-                    Designed By{' '}
+                    &copy; {new Date().getFullYear()} 6ixCityImmigration, Inc.,
+                    All Rights Reserved. Designed By{' '}
                     <a
                       href="https://gurkiratz.co/"
                       className="text-decoration-none"
