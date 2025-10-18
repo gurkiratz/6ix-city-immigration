@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { BiCommentDetail } from 'react-icons/bi';
 import { FaRegEnvelope, FaRegListAlt } from 'react-icons/fa';
+import contactInfo from '@/config/contact';
 
 const HelpCenterSingleDetails = () => {
   return (
@@ -63,7 +64,7 @@ const HelpCenterSingleDetails = () => {
                     </div>
                   </a>
                 </Link>
-                <Link href="mailto:info@themetags.com">
+                <Link href={`mailto:${contactInfo.email.primary}`}>
                   <a className="text-decoration-none text-muted d-flex align-items-center py-2">
                     <div className="quick-support-icon rounded-circle bg-primary-soft me-3">
                       <i className="far text-primary">
@@ -71,7 +72,7 @@ const HelpCenterSingleDetails = () => {
                       </i>
                     </div>
                     <div className="contact-option-text">
-                      info@themetags.com
+                      {contactInfo.email.primary}
                     </div>
                   </a>
                 </Link>

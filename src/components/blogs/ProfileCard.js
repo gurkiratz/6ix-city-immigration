@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
 import { FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import contactInfo from '@/config/contact'
 
 const ProfileCard = () => {
   return (
@@ -24,21 +25,21 @@ const ProfileCard = () => {
       </p>
       <ul className="list-unstyled author-social-list list-inline mt-3 mb-0">
         <li className="list-inline-item">
-          <Link href="https://wa.me/16477060054" passHref>
+          <Link href={contactInfo.social.whatsapp} passHref>
             <a className="fab">
               <FaWhatsapp />
             </a>
           </Link>
         </li>
         <li className="list-inline-item">
-          <Link href="https://www.instagram.com/6ixcityimmigration/" passHref>
+          <Link href={contactInfo.social.instagram} passHref>
             <a className="fab">
               <FaInstagram />
             </a>
           </Link>
         </li>
         <li className="list-inline-item">
-          <Link href="https://www.facebook.com/6ixcityimmigration" passHref>
+          <Link href={contactInfo.social.facebook} passHref>
             <a className="fab">
               <FaFacebookF />
             </a>

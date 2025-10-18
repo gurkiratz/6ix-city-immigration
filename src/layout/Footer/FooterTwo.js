@@ -7,9 +7,11 @@ import {
   FaWhatsapp,
   FaFacebook,
   FaPhone,
+  FaMapMarkerAlt,
 } from 'react-icons/fa'
 import { IoMail } from 'react-icons/io5'
 import { servicesData } from '@utils/data'
+import contactInfo from '@/config/contact'
 
 const FooterTwo = () => {
   return (
@@ -34,21 +36,21 @@ const FooterTwo = () => {
                 </p>
                 <ul className="list-unstyled list-inline footer-social-list mb-0">
                   <li className="list-inline-item">
-                    <a href="https://wa.me/16477060054">
+                    <a href={contactInfo.social.whatsapp}>
                       <i>
                         <FaWhatsapp />
                       </i>
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="https://www.instagram.com/6ixcityimmigration/">
+                    <a href={contactInfo.social.instagram}>
                       <i>
                         <FaInstagram />
                       </i>
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="https://www.facebook.com/6ixcityimmigration">
+                    <a href={contactInfo.social.facebook}>
                       <i>
                         <FaFacebookF />
                       </i>
@@ -114,10 +116,19 @@ const FooterTwo = () => {
                     <h3 className="h5 mb-4 text-white">Contact Info</h3>
                     <ul className="list-unstyled footer-nav-list mb-lg-0">
                       <li className="fw-medium">
-                        <FaPhone /> / <FaWhatsapp /> : +1 (647)-706-0054
+                        <FaPhone /> / <FaWhatsapp /> : {contactInfo.phone.display}
                       </li>
-                      <li className="fw-medium">
-                        <IoMail /> : 6ixcityimmigration@gmail.com
+                      <li className="fw-medium mt-3">
+                        <IoMail /> : {contactInfo.email.primary}
+                      </li>
+                      <li className="fw-medium mt-3">
+                        <FaMapMarkerAlt /> Office Address:
+                      </li>
+                      <li className="ps-4">
+                        {contactInfo.address.short}
+                      </li>
+                      <li className=" fw-medium mt-3">
+                        <FaPhone /> Office: {contactInfo.office.display}
                       </li>
                     </ul>
                   </div>
@@ -136,7 +147,7 @@ const FooterTwo = () => {
                   &copy; 2024 6ixCityImmigration, Inc., All Rights Reserved.{' '}
                   <span className="">
                     Designed by{' '}
-                    <Link href={'https://gurkiratsingh.co/'}>Gurkirat Singh</Link>
+                    <Link href={'https://gurkiratz.co/'}>Gurkirat Singh</Link>
                   </span>
                 </p>
               </div>
@@ -145,21 +156,21 @@ const FooterTwo = () => {
               <div className="footer-single-col text-start text-lg-end text-md-end">
                 <ul className="list-unstyled list-inline footer-social-list mb-0">
                   <li className="list-inline-item">
-                    <a href="https://wa.me/16477060054">
+                    <a href={contactInfo.social.whatsapp}>
                       <i>
                         <FaWhatsapp />
                       </i>
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="https://www.instagram.com/6ixcityimmigration/">
+                    <a href={contactInfo.social.instagram}>
                       <i>
                         <FaInstagram />
                       </i>
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="https://www.facebook.com/6ixcityimmigration">
+                    <a href={contactInfo.social.facebook}>
                       <i>
                         <FaFacebook />
                       </i>

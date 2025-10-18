@@ -4,6 +4,7 @@ import { FaPhoneAlt } from 'react-icons/fa'
 import { IoMail } from 'react-icons/io5'
 import SectionTitle from '../common/SectionTitle'
 import ServiceForm from '../services/ServiceForm'
+import contactInfo from '@/config/contact'
 
 const QuickSupport = () => {
   return (
@@ -28,17 +29,17 @@ const QuickSupport = () => {
                   <h5>Call Us</h5>
                   <p>
                     Our support will help you from
-                    <strong> 9am to 5pm EST.</strong> Send a message on Whatsapp
-                    and receive quick reply.
+                    <strong> {contactInfo.hours.weekday}.</strong> Send a message on Whatsapp
+                    and receive {contactInfo.response.whatsapp}.
                   </p>
                   <a
-                    href="https://wa.me/16477060054"
+                    href={contactInfo.social.whatsapp}
                     className="read-more-link text-decoration-none"
                   >
                     <span className="far me-2">
                       <FaPhoneAlt className="mb-1" />
                     </span>{' '}
-                    +1 (647) 706-0054
+                    {contactInfo.phone.display}
                   </a>
                 </div>
               </div>
@@ -50,16 +51,16 @@ const QuickSupport = () => {
                 </div>
                 <div className="contact-info">
                   <h5>Email Us</h5>
-                  <p>We will reply to your email within 24 hours.</p>
+                  <p>We will reply to your email within {contactInfo.response.email}.</p>
 
                   <a
-                    href="mailto:6ixcityimmigration@gmail.com"
+                    href={`mailto:${contactInfo.email.primary}`}
                     className="read-more-link text-decoration-none"
                   >
                     <span className="far me-2">
                       <IoMail className="mb-1" />
                     </span>{' '}
-                    6ixcityimmigration@gmail.com
+                    {contactInfo.email.primary}
                   </a>
                 </div>
               </div>

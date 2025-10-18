@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import contactInfo from '@/config/contact'
 
 const Blockquote = () => {
   return (
@@ -30,21 +31,21 @@ const Blockquote = () => {
       </p>
       <ul className="list-unstyled list-inline footer-social-list mb-0">
         <li className="list-inline-item">
-          <a href="https://wa.me/16477060054">
+          <a href={contactInfo.social.whatsapp}>
             <i>
               <FaWhatsapp />
             </i>
           </a>
         </li>
         <li className="list-inline-item">
-          <a href="https://www.instagram.com/6ixcityimmigration/">
+          <a href={contactInfo.social.instagram}>
             <i>
               <FaInstagram />
             </i>
           </a>
         </li>
         <li className="list-inline-item">
-          <a href="https://www.facebook.com/6ixcityimmigration">
+          <a href={contactInfo.social.facebook}>
             <i>
               <FaFacebookF />
             </i>

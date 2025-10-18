@@ -17,6 +17,7 @@ import {
   footerTemplate,
 } from '../../utils/data'
 import Rating from '../../components/common/Rating'
+import contactInfo from '@/config/contact'
 
 const Footer = ({ footerLight, style, footerGradient }) => {
   return (
@@ -59,21 +60,21 @@ const Footer = ({ footerLight, style, footerGradient }) => {
                   <div className="footer-single-col text-start mt-4">
                     <ul className="list-unstyled list-inline footer-social-list mb-0">
                       <li className="list-inline-item">
-                        <a href="https://wa.me/16477060054">
+                        <a href={contactInfo.social.whatsapp}>
                           <i>
                             <FaWhatsapp />
                           </i>
                         </a>
                       </li>
                       <li className="list-inline-item">
-                        <a href="https://www.instagram.com/6ixcityimmigration/">
+                        <a href={contactInfo.social.instagram}>
                           <i>
                             <FaInstagram />
                           </i>
                         </a>
                       </li>
                       <li className="list-inline-item">
-                        <a href="https://www.facebook.com/6ixcityimmigration">
+                        <a href={contactInfo.social.facebook}>
                           <i>
                             <FaFacebook />
                           </i>
@@ -158,7 +159,7 @@ const Footer = ({ footerLight, style, footerGradient }) => {
                     &copy; 2024 6ixCityImmigration, Inc., All Rights Reserved.
                     Designed By{' '}
                     <a
-                      href="https://devkirat.me/"
+                      href="https://gurkiratz.co/"
                       className="text-decoration-none"
                     >
                       Gurkirat Singh
@@ -184,7 +185,7 @@ const Footer = ({ footerLight, style, footerGradient }) => {
                       </Link>
                     </li>
                     <li className="list-inline-item">
-                      <a href="https://wa.me/16477060054">
+                      <a href={contactInfo.social.whatsapp}>
                         <i>
                           <FaWhatsapp />
                         </i>

@@ -2,7 +2,8 @@ import { useForm, ValidationError } from '@formspree/react'
 import { PiCheckCircleFill } from 'react-icons/pi'
 
 const ServiceForm = () => {
-  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM)
+  const formId = process.env.NEXT_PUBLIC_FORM || 'placeholder-form-id'
+  const [state, handleSubmit] = useForm(formId)
 
   return (
     <>
