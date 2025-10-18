@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
 import { FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa'
-import contactInfo from '@/config/contact'
+import contactInfo from '@config/contact'
 
 const ProfileCard = () => {
   return (

@@ -1,6 +1,6 @@
-import React from 'react';
-import contactInfo from '@/config/contact';
-import { FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import React from 'react'
+import contactInfo from '@config/contact'
+import { FaPhone, FaMapMarkerAlt } from 'react-icons/fa'
 
 const OurOffice = () => {
   return (
@@ -12,7 +12,9 @@ const OurOffice = () => {
               <h4 className="h5 text-primary">Our Office</h4>
               <h2>Visit Us in Brampton</h2>
               <p>
-                Located in the heart of Brampton, our office is ready to assist you with all your Canadian immigration needs. Walk-ins welcome during business hours.
+                Located in the heart of Brampton, our office is ready to assist
+                you with all your Canadian immigration needs. Walk-ins welcome
+                during business hours.
               </p>
             </div>
           </div>
@@ -24,7 +26,7 @@ const OurOffice = () => {
               style={{
                 background:
                   "url('/6ix city office.png')no-repeat center center / cover",
-                minHeight: '400px'
+                minHeight: '400px',
               }}
             >
               <div className="office-content text-center p-4">
@@ -49,7 +51,7 @@ const OurOffice = () => {
                       <br />
                       {contactInfo.hours.weekday}
                     </p>
-                    <a 
+                    <a
                       href={contactInfo.address.googleMapsUrl}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -66,7 +68,7 @@ const OurOffice = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default OurOffice;
+export default OurOffice

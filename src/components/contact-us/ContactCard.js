@@ -5,7 +5,7 @@ import {
   BsTelephoneInbound,
 } from 'react-icons/bs'
 import { FaWhatsapp, FaMapMarkerAlt } from 'react-icons/fa'
-import contactInfo from '@/config/contact'
+import contactInfo from '@config/contact'
 
 const ContactCard = () => {
   return (
@@ -21,7 +21,8 @@ const ContactCard = () => {
                 <h5>Chat with us</h5>
                 <p>
                   Our support will help you from{' '}
-                  <strong> {contactInfo.hours.weekday}</strong>. Send a message on
+                  <strong> {contactInfo.hours.weekday}</strong>. Send a message
+                  on
                   <strong> Whatsapp </strong>
                   and receive {contactInfo.response.whatsapp}.
                 </p>
@@ -44,7 +45,8 @@ const ContactCard = () => {
                 <p>
                   Simple drop us an email at{' '}
                   <strong>{contactInfo.email.display} </strong>
-                  and you will receive a reply within {contactInfo.response.email}
+                  and you will receive a reply within{' '}
+                  {contactInfo.response.email}
                 </p>
               </div>
               <a
@@ -68,7 +70,10 @@ const ContactCard = () => {
                   <strong> {contactInfo.hours.weekday}.</strong>
                 </p>
               </div>
-              <a href={`tel:${contactInfo.phone.tel}`} className="btn btn-link mt-auto">
+              <a
+                href={`tel:${contactInfo.phone.tel}`}
+                className="btn btn-link mt-auto"
+              >
                 {contactInfo.phone.display}
               </a>
             </div>

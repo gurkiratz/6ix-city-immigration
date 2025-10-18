@@ -1,11 +1,11 @@
-import React from 'react';
-import Link from 'next/link';
-import { FiArrowRight } from 'react-icons/fi';
-import { BiCommentDetail } from 'react-icons/bi';
-import { FaRegEnvelope, FaRegListAlt } from 'react-icons/fa';
+import React from 'react'
+import Link from 'next/link'
+import { FiArrowRight } from 'react-icons/fi'
+import { BiCommentDetail } from 'react-icons/bi'
+import { FaRegEnvelope, FaRegListAlt } from 'react-icons/fa'
 
-import { helpCenterFaqDetails } from '../../utils/data';
-import contactInfo from '@/config/contact';
+import { helpCenterFaqDetails } from '../../utils/data'
+import contactInfo from '@config/contact'
 
 const HelpCenterDetails = () => {
   return (
@@ -185,7 +185,7 @@ const HelpCenterDetails = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default HelpCenterDetails;
+export default HelpCenterDetails

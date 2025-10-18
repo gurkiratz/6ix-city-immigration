@@ -17,7 +17,7 @@ import {
   footerTemplate,
 } from '../../utils/data'
 import Rating from '../../components/common/Rating'
-import contactInfo from '@/config/contact'
+import contactInfo from '@config/contact'
 
 const Footer = ({ footerLight, style, footerGradient }) => {
   return (

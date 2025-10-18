@@ -1,8 +1,8 @@
-import React from 'react';
-import Link from 'next/link';
-import { BiCommentDetail } from 'react-icons/bi';
-import { FaRegEnvelope, FaRegListAlt } from 'react-icons/fa';
-import contactInfo from '@/config/contact';
+import React from 'react'
+import Link from 'next/link'
+import { BiCommentDetail } from 'react-icons/bi'
+import { FaRegEnvelope, FaRegListAlt } from 'react-icons/fa'
+import contactInfo from '@config/contact'
 
 const HelpCenterSingleDetails = () => {
   return (
@@ -163,7 +163,7 @@ const HelpCenterSingleDetails = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HelpCenterSingleDetails;
+export default HelpCenterSingleDetails

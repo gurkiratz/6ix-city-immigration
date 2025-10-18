@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa'
-import contactInfo from '@/config/contact'
+import contactInfo from '@config/contact'
 
 const Blockquote = () => {
   return (

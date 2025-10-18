@@ -4,7 +4,7 @@ import { FaPhoneAlt } from 'react-icons/fa'
 import { IoMail } from 'react-icons/io5'
 import SectionTitle from '../common/SectionTitle'
 import ServiceForm from '../services/ServiceForm'
-import contactInfo from '@/config/contact'
+import contactInfo from '@config/contact'
 
 const QuickSupport = () => {
   return (
@@ -29,8 +29,9 @@ const QuickSupport = () => {
                   <h5>Call Us</h5>
                   <p>
                     Our support will help you from
-                    <strong> {contactInfo.hours.weekday}.</strong> Send a message on Whatsapp
-                    and receive {contactInfo.response.whatsapp}.
+                    <strong> {contactInfo.hours.weekday}.</strong> Send a
+                    message on Whatsapp and receive{' '}
+                    {contactInfo.response.whatsapp}.
                   </p>
                   <a
                     href={contactInfo.social.whatsapp}
@@ -51,7 +52,10 @@ const QuickSupport = () => {
                 </div>
                 <div className="contact-info">
                   <h5>Email Us</h5>
-                  <p>We will reply to your email within {contactInfo.response.email}.</p>
+                  <p>
+                    We will reply to your email within{' '}
+                    {contactInfo.response.email}.
+                  </p>
 
                   <a
                     href={`mailto:${contactInfo.email.primary}`}

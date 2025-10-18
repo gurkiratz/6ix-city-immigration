@@ -11,7 +11,7 @@ import {
 } from 'react-icons/fa'
 import { IoMail } from 'react-icons/io5'
 import { servicesData } from '@utils/data'
-import contactInfo from '@/config/contact'
+import contactInfo from '@config/contact'
 
 const FooterTwo = () => {
   return (
@@ -116,7 +116,8 @@ const FooterTwo = () => {
                     <h3 className="h5 mb-4 text-white">Contact Info</h3>
                     <ul className="list-unstyled footer-nav-list mb-lg-0">
                       <li className="fw-medium">
-                        <FaPhone /> / <FaWhatsapp /> : {contactInfo.phone.display}
+                        <FaPhone /> / <FaWhatsapp /> :{' '}
+                        {contactInfo.phone.display}
                       </li>
                       <li className="fw-medium mt-3">
                         <IoMail /> : {contactInfo.email.primary}
@@ -124,9 +125,7 @@ const FooterTwo = () => {
                       <li className="fw-medium mt-3">
                         <FaMapMarkerAlt /> Office Address:
                       </li>
-                      <li className="ps-4">
-                        {contactInfo.address.short}
-                      </li>
+                      <li className="ps-4">{contactInfo.address.short}</li>
                       <li className=" fw-medium mt-3">
                         <FaPhone /> Office: {contactInfo.office.display}
                       </li>
