@@ -1,6 +1,6 @@
-import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 import {
   FaInstagram,
   FaFacebookF,
@@ -8,10 +8,10 @@ import {
   FaFacebook,
   FaPhone,
   FaMapMarkerAlt,
-} from 'react-icons/fa'
-import { IoMail } from 'react-icons/io5'
-import { servicesData } from '@utils/data'
-import contactInfo from '@config/contact'
+} from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
+import { servicesData } from "@utils/data";
+import contactInfo from "@config/contact";
 
 const FooterTwo = () => {
   return (
@@ -116,7 +116,7 @@ const FooterTwo = () => {
                     <h3 className="h5 mb-4 text-white">Contact Info</h3>
                     <ul className="list-unstyled footer-nav-list mb-lg-0">
                       <li className="fw-medium">
-                        <FaPhone /> / <FaWhatsapp /> :{' '}
+                        <FaPhone /> / <FaWhatsapp /> :{" "}
                         {contactInfo.phone.display}
                       </li>
                       <li className="fw-medium mt-3">
@@ -126,9 +126,6 @@ const FooterTwo = () => {
                         <FaMapMarkerAlt /> Office Address:
                       </li>
                       <li className="ps-4">{contactInfo.address.short}</li>
-                      <li className=" fw-medium mt-3">
-                        <FaPhone /> Office: {contactInfo.office.display}
-                      </li>
                     </ul>
                   </div>
                 </div>
@@ -144,10 +141,10 @@ const FooterTwo = () => {
               <div className="copyright-text">
                 <p className="mb-lg-0 mb-md-0">
                   &copy; {new Date().getFullYear()} 6ixCityImmigration, Inc.,
-                  All Rights Reserved. Designed By{' '}
+                  All Rights Reserved. Designed By{" "}
                   <span className="">
-                    Designed by{' '}
-                    <Link href={'https://gurkiratz.co/'}>Gurkirat Singh</Link>
+                    Designed by{" "}
+                    <Link href={"https://gurkiratz.co/"}>Gurkirat Singh</Link>
                   </span>
                 </p>
               </div>
@@ -183,7 +180,7 @@ const FooterTwo = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default FooterTwo
+export default FooterTwo;

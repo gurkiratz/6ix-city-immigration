@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 import {
   BsFillChatSquareTextFill,
   BsFillEnvelopeFill,
   BsTelephoneInbound,
-} from 'react-icons/bs'
-import { FaWhatsapp, FaMapMarkerAlt } from 'react-icons/fa'
-import contactInfo from '@config/contact'
+} from "react-icons/bs";
+import { FaWhatsapp, FaMapMarkerAlt } from "react-icons/fa";
+import contactInfo from "@config/contact";
 
 const ContactCard = () => {
   return (
@@ -20,7 +20,7 @@ const ContactCard = () => {
               <div className="contact-promo-info mb-4">
                 <h5>Chat with us</h5>
                 <p>
-                  Our support will help you from{' '}
+                  Our support will help you from{" "}
                   <strong> {contactInfo.hours.weekday}</strong>. Send a message
                   on
                   <strong> Whatsapp </strong>
@@ -43,9 +43,9 @@ const ContactCard = () => {
               <div className="contact-promo-info mb-4">
                 <h5>Email Us</h5>
                 <p>
-                  Simple drop us an email at{' '}
+                  Simple drop us an email at{" "}
                   <strong>{contactInfo.email.display} </strong>
-                  and you will receive a reply within{' '}
+                  and you will receive a reply within{" "}
                   {contactInfo.response.email}
                 </p>
               </div>
@@ -65,7 +65,7 @@ const ContactCard = () => {
               <div className="contact-promo-info mb-4">
                 <h5>Give us a call</h5>
                 <p>
-                  Give us a ring. Our Experts are standing by{' '}
+                  Give us a ring. Our Experts are standing by{" "}
                   <strong>{contactInfo.hours.availability}</strong> from
                   <strong> {contactInfo.hours.weekday}.</strong>
                 </p>
@@ -93,9 +93,6 @@ const ContactCard = () => {
                   <br />
                   {contactInfo.hours.weekday}
                 </p>
-                <p className="small">
-                  Office: <strong>{contactInfo.office.display}</strong>
-                </p>
               </div>
               <a
                 href={contactInfo.address.googleMapsUrl}
@@ -110,7 +107,7 @@ const ContactCard = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ContactCard
+export default ContactCard;

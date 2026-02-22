@@ -1,6 +1,6 @@
-import React from 'react'
-import contactInfo from '@config/contact'
-import { FaPhone, FaMapMarkerAlt } from 'react-icons/fa'
+import React from "react";
+import contactInfo from "@config/contact";
+import { FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 
 const OurOffice = () => {
   return (
@@ -26,7 +26,7 @@ const OurOffice = () => {
               style={{
                 background:
                   "url('/6ix city office.png')no-repeat center center / cover",
-                minHeight: '400px',
+                minHeight: "400px",
               }}
             >
               <div className="office-content text-center p-4">
@@ -38,10 +38,6 @@ const OurOffice = () => {
                     {contactInfo.address.city}, {contactInfo.address.province}
                   </address>
                   <div className="text-white mt-3">
-                    <p className="mb-2">
-                      <FaPhone className="me-2" />
-                      Office: {contactInfo.office.display}
-                    </p>
                     <p className="mb-2">
                       <FaPhone className="me-2" />
                       Mobile: {contactInfo.phone.display}
@@ -68,7 +64,7 @@ const OurOffice = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default OurOffice
+export default OurOffice;
