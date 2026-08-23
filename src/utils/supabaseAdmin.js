@@ -2,6 +2,7 @@
 // Uses the service-role key, so this must NEVER be imported from
 // client-side code (components) — only from pages/api/* routes.
 import { createClient } from "@supabase/supabase-js";
+import ws from "ws";
 
 let cachedClient = null;
 
@@ -19,6 +20,13 @@ export function getSupabaseAdmin() {
     );
   }
 
-  cachedClient = createClient(url, key);
+  cachedClient = createClient(url, key, {
+    // supabase-js always constructs a Realtime client, which otherwise
+    // throws at construction time on Vercel's Node.js serverless runtime
+    // (no global WebSocket there below Node 22). We never use Realtime
+    // here — this is a plain REST client — so the `ws` polyfill just
+    // needs to exist to satisfy that constructor; it's never connected.
+    realtime: { transport: ws },
+  });
   return cachedClient;
 }

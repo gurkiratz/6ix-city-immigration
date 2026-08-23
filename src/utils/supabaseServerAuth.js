@@ -3,9 +3,16 @@
 // middleware.js's cheap cookie-presence check, this actually calls Supabase
 // to validate the session.
 import { createServerClient, parseCookieHeader, serializeCookieHeader } from "@supabase/ssr";
+import ws from "ws";
 
 function createSupabaseServerClient(req, res) {
   return createServerClient(process.env.NEXT_PUBLIC_SUPABASE_URL, process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY, {
+    // supabase-js always constructs a Realtime client, which otherwise
+    // throws at construction time on Vercel's Node.js serverless runtime
+    // (no global WebSocket there below Node 22). We only use this client
+    // for supabase.auth.getUser() — never Realtime — so the `ws` polyfill
+    // just needs to exist to satisfy that constructor; it's never connected.
+    realtime: { transport: ws },
     cookies: {
       getAll() {
         return parseCookieHeader(req.headers.cookie ?? "");
@@ -34,8 +41,22 @@ export async function getAuthenticatedUser(req, res) {
 
 // Call at the top of any admin API route. Sends a 401 and returns false if
 // there's no valid signed-in user; the route should then `return` immediately.
+//
+// Wrapped in try/catch so a broken auth check (e.g. missing
+// NEXT_PUBLIC_SUPABASE_URL / NEXT_PUBLIC_SUPABASE_ANON_KEY env vars, or a
+// Supabase outage) surfaces as a normal 500 JSON response instead of an
+// uncaught exception — an uncaught throw here happens before any route's own
+// try/catch runs, which crashes the whole serverless function
+// (FUNCTION_INVOCATION_FAILED) instead of returning a diagnosable error.
 export async function requireAdminUser(req, res) {
-  const user = await getAuthenticatedUser(req, res);
+  let user;
+  try {
+    user = await getAuthenticatedUser(req, res);
+  } catch (error) {
+    res.status(500).json({ error: `Authentication check failed: ${error.message}` });
+    return null;
+  }
+
   if (!user) {
     res.status(401).json({ error: "Authentication required." });
     return null;
