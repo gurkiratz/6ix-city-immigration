@@ -378,11 +378,145 @@ export const BLUEPRINTS = {
     },
   },
   "Express Entry": {
-    documents: [],
-    tasks: [],
+    documents: [
+      {
+        label: "Copy of passport",
+        category: "required",
+        description: "Front, all used, and Last page.",
+      },
+      {
+        label: "Current immigration status document",
+        category: "required",
+        description: "Valid Work Permit copy.",
+      },
+      {
+        label: "Government Issued ID",
+        category: "required",
+        description:
+          "Driver’s License, Aadhaar Card, National Identity Card, etc.",
+      },
+      {
+        label: "Job Letter",
+        category: "required",
+        description: "Employment letter to verify your stated details.",
+      },
+      {
+        label: "IELTS or CELPIP Certificate",
+        category: "required",
+        description: "Valid official English language exam results.",
+      },
+      {
+        label: "WES Evaluation Certificate",
+        category: "optional",
+        description: "Required only if study was completed outside of Canada.",
+      },
+      {
+        label: "LMIA Approval",
+        category: "optional",
+        description: "Upload if applicable to your application profile.",
+      },
+      {
+        label: "Marriage Certificate",
+        category: "optional",
+        description: "Required only if you are married.",
+      },
+    ],
+    tasks: [
+      {
+        label: "Review and Sign Retention Authorization",
+        description:
+          "Ensure the client has reviewed their submission data. By submitting, they authorize 6ix City Immigration Inc. to enter their data in their Express Entry file, accepting that the firm is not responsible for errors in user-provided details.",
+      },
+      {
+        label: "Verify Language & ECA Validity",
+        description:
+          "Ensure that the IELTS/CELPIP score certificate is less than 2 years old and that the WES evaluation is valid.",
+      },
+    ],
     questionnaire: {
-      defaultSections: [],
-      optionalSections: [],
+      defaultSections: [
+        {
+          id: "ee_personal_info",
+          title: "Express Entry: Personal Information",
+          is_active: true,
+          questionKeys: [
+            "first_name",
+            "last_name",
+            "any_other_name",
+            "gender",
+            "date_of_birth",
+            "place_of_birth", // Reused "Place of birth" for City of Birth
+            "marital_status",
+            "marriage_date",
+            "passport_num",
+            "passport_issue_date",
+            "passport_expiry_date",
+            "citizenship_country",
+            "proof_of_funds_amount",
+            "biometrics_completed",
+          ],
+        },
+        {
+          id: "ee_contact_details",
+          title: "Express Entry: Contact & Basic Details",
+          is_active: true,
+          questionKeys: [
+            "phone_number",
+            "native_language", // Reused "Native language" for Mother tongue
+            "current_address",
+            "email_address",
+          ],
+        },
+        {
+          id: "ee_language_test",
+          title: "Express Entry: IELTS / CELPIP Language Test",
+          is_active: true,
+          questionKeys: [
+            "lang_test_taken",
+            "lang_test_version",
+            "lang_test_date",
+            "lang_test_result_date",
+            "lang_test_cert_num",
+            "lang_speaking",
+            "lang_reading",
+            "lang_listening",
+            "lang_writing",
+          ],
+        },
+        {
+          id: "ee_education_history",
+          title: "Express Entry: Education History",
+          is_active: true,
+          questionKeys: ["ee_education_repeater"],
+        },
+        {
+          id: "ee_work_history",
+          title: "Express Entry: Work History",
+          is_active: true,
+          questionKeys: ["ee_work_history_repeater"],
+        },
+      ],
+      optionalSections: [
+        {
+          id: "ee_spousal_form",
+          title: "Spousal Details",
+          is_active: false,
+          questionKeys: [
+            "spouse_first_name",
+            "spouse_last_name",
+            "marriage_date",
+          ],
+        },
+        {
+          id: "ee_canadian_relative",
+          title: "Relatives in Canada",
+          is_active: false,
+          questionKeys: [
+            "has_canadian_relative",
+            "relatives_in_canada_repeater",
+          ],
+        },
+      ],
     },
   },
   Other: {

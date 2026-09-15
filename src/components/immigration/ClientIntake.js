@@ -2,7 +2,7 @@
 // Public page a client lands on via their share-token link.
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import QuestionnaireRunner from "./QuestionnaireRunner";
+//import QuestionnaireRunner from "./QuestionnaireRunner";
 import ClientDocumentChecklist from "./ClientDocumentChecklist";
 
 const ClientIntake = () => {
@@ -13,8 +13,14 @@ const ClientIntake = () => {
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState("");
-  const [isQueueActive, setIsQueueActive] = useState(true);
+  //const [isQueueActive, setIsQueueActive] = useState(true);
   const [showSuccess, setShowSuccess] = useState(false);
+  const latestSectionsRef = React.useRef(sections);
+    React.useEffect(() => {
+      latestSectionsRef.current = sections;
+    }, [sections]);
+  const [hasBeenFocused, setHasBeenFocused] = React.useState(false);
+  const [isDirty, setIsDirty] = React.useState(false);
 
   useEffect(() => {
     const fetchForm = async () => {
@@ -33,7 +39,7 @@ const ClientIntake = () => {
     if (token) fetchForm();
   }, [token]);
 
-  const handleSaveAnswer = async (sectionId, fieldId, value) => {
+  /* const handleSaveAnswer = async (sectionId, fieldId, value) => {
     let updatedSections = [];
     setSections((prev) => {
       updatedSections = prev.map((section) => {
@@ -48,9 +54,10 @@ const ClientIntake = () => {
       return updatedSections;
     });
     return await saveProgress(undefined, updatedSections);
-  };
+  }; */
 
   const handleInputChange = async (sectionId, fieldId, value) => {
+    setIsDirty(true);
     setSections((prev) =>
       prev.map((section) => {
         if (section.id !== sectionId) return section;
@@ -64,7 +71,58 @@ const ClientIntake = () => {
     );
   };
 
-  const saveProgress = async (event, sectionsToSave) => {
+  // --- REPEATER STATE HANDLERS ---
+  
+  const handleRepeaterAdd = (sectionId, fieldId) => {
+    setIsDirty(true);
+    setSections(prev => prev.map(section => {
+      if (section.id !== sectionId) return section;
+      return {
+        ...section,
+        fields: section.fields.map(field => {
+          if (field.id !== fieldId) return field;
+          const currentArray = Array.isArray(field.answer) ? field.answer : [];
+          return { ...field, answer: [...currentArray, {}] };
+        })
+      };
+    }));
+  };
+
+  const handleRepeaterRemove = (sectionId, fieldId, indexToRemove) => {
+    setIsDirty(true);
+    setSections(prev => prev.map(section => {
+      if (section.id !== sectionId) return section;
+      return {
+        ...section,
+        fields: section.fields.map(field => {
+          if (field.id !== fieldId) return field;
+          const currentArray = Array.isArray(field.answer) ? field.answer : [];
+          return { ...field, answer: currentArray.filter((_, idx) => idx !== indexToRemove) };
+        })
+      };
+    }));
+  };
+
+  const handleRepeaterChange = (sectionId, fieldId, index, subFieldId, value) => {
+    setIsDirty(true);
+    setSections(prev => prev.map(section => {
+      if (section.id !== sectionId) return section;
+      return {
+        ...section,
+        fields: section.fields.map(field => {
+          if (field.id !== fieldId) return field;
+          const currentArray = Array.isArray(field.answer) ? [...field.answer] : [];
+          if (currentArray[index]) {
+            currentArray[index] = { ...currentArray[index], [subFieldId]: value };
+          }
+          return { ...field, answer: currentArray };
+        })
+      };
+    }));
+  };
+
+
+  const saveProgress = React.useCallback(async (event, sectionsToSave) => {
     setSaving(true);
     try {
       const payloadSections = sectionsToSave ?? sections;
@@ -80,7 +138,35 @@ const ClientIntake = () => {
     } finally {
       setSaving(false);
     }
-  };
+  }, [sections, token]);
+
+  React.useEffect(() => {
+    const handleGlobalFocus = (e) => {
+      const target = e.target;
+      if (['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName)) {
+        setHasBeenFocused(true);
+      }
+    };
+    document.addEventListener('focusin', handleGlobalFocus);
+
+    const AUTO_SAVE_INTERVAL = 30000; // 30 seconds
+
+    const interval = setInterval(async () => {
+      if (hasBeenFocused && isDirty) {
+        try {
+          await saveProgress(undefined, latestSectionsRef.current);
+          setIsDirty(false);
+        } catch (err) {
+          console.error("Failed to save progress. Please try again.", err);
+        }
+      }
+    }, AUTO_SAVE_INTERVAL);
+
+    return () => {
+      document.removeEventListener('focusin', handleGlobalFocus);
+      clearInterval(interval);
+    };
+  }, [hasBeenFocused, isDirty, saveProgress]);
 
   if (loading) return <div className="immigration-page">Loading your form...</div>;
   if (error)
@@ -99,6 +185,9 @@ const ClientIntake = () => {
       </div>
 
       <div className="client-intake-page">
+        {/* 
+          --Temporarily remove the QuestionnaireRunner component to allow for direct form filling.
+
         {isQueueActive ? (
           <QuestionnaireRunner
             sections={sections}
@@ -107,7 +196,7 @@ const ClientIntake = () => {
           />
         ) : (
           ""
-        )}
+        )} */}
 
         <div className="intake-form-container">
           {sections
@@ -128,6 +217,21 @@ const ClientIntake = () => {
                         />
                       )}
 
+                      {field.type === "number" && (
+                        <input
+                          type="number"
+                          value={field.answer || ""}
+                          onChange={(e) => handleInputChange(section.id, field.id, e.target.value)}
+                        />
+                      )}
+
+                      {field.type === "textarea" && (
+                        <textarea
+                          value={field.answer || ""}
+                          onChange={(e) => handleInputChange(section.id, field.id, e.target.value)}
+                        />
+                      )}
+
                       {field.type === "date" && (
                         <input
                           type="date"
@@ -136,12 +240,19 @@ const ClientIntake = () => {
                         />
                       )}
 
-                      {field.type === "boolean" && (
-                        <input
-                          type="checkbox"
-                          checked={field.answer || false}
-                          onChange={(e) => handleInputChange(section.id, field.id, e.target.checked)}
-                        />
+                      {field.type === 'boolean' && (
+                        <select 
+                          className="stylized-select"
+                          required
+                          /* This safely converts true/false/undefined to string values for the select UI */
+                          value={field.answer === true ? 'true' : field.answer === false ? 'false' : ''} 
+                          /* This converts the string back into a strict boolean for your state */
+                          onChange={(e) => handleInputChange(section.id, field.id, e.target.value === 'true')}
+                        >
+                          <option value="" disabled>Select Yes or No</option>
+                          <option value="true">Yes</option>
+                          <option value="false">No</option>
+                        </select>
                       )}
 
                       {field.type === "select" && (
@@ -166,17 +277,41 @@ const ClientIntake = () => {
                       {field.type === "repeater" && (
                         <div className="repeater-container">
                           {(field.answer || []).map((item, index) => (
-                            <div key={index} className="repeater-item">
-                              {field.subFields?.map((subField) => (
-                                <div key={subField.id} className="form-group">
-                                  <label>{subField.label}</label>
-                                  {subField.type === "text" && (
-                                    <input type="text" value={item[subField.id] || ""} readOnly />
-                                  )}
-                                </div>
-                              ))}
+                           <div key={index} className="repeater-item">
+                            <div className="repeater-header">
+                              <h4>Entry #{index + 1}</h4>
+                              <button 
+                                type="button" 
+                                className="btn-remove-repeater"
+                                onClick={() => handleRepeaterRemove(section.id, field.id, index)}
+                              >
+                                Remove
+                              </button>
                             </div>
+                            {field.subFields?.map(subField => (
+                              <div key={subField.id} className="form-group" style={{ marginBottom: '10px' }}>
+                                <label style={{ display: 'block', marginBottom: '4px' }}>{subField.label}</label>
+                                {(subField.type === 'text' || subField.type === 'date') && (
+                                  <input 
+                                    type={subField.type}
+                                    className="runner-input" /* Reusing your existing input class */
+                                    style={{ width: '100%', padding: '8px' }}
+                                    value={item[subField.id] || ''}
+                                    onChange={(e) => handleRepeaterChange(section.id, field.id, index, subField.id, e.target.value)}
+                                  />
+                                )}
+                              </div>
+                            ))}
+                          </div>
                           ))}
+
+                          <button
+                            type="button"
+                            className="btn-add-repeater"
+                            onClick={() => handleRepeaterAdd(section.id, field.id)}
+                          >
+                            {field.addButtonLabel || "Add Entry"}
+                          </button>
                         </div>
                       )}
                     </div>
